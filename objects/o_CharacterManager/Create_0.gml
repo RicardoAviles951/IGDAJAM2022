@@ -10,8 +10,8 @@ global.brockExists = false;
 
 // global variable's to track if paths are in use
 global.BarPath1inUse = false;
-global.BarPath2inUse = false;
-global.BarPath3inUse = false;
+global.BarPath2inUse = true;
+global.BarPath3inUse = true;
 
 // global variable tracking customer satisfaction
 global.unsatisfiedCustomers = 0;
@@ -20,7 +20,7 @@ global.unsatisfiedCustomers = 0;
 global.conversationStarted = false;
 
 // variables for character spawn timer
-characterSpawnTimer = 10;
+characterSpawnTimer = 5;
 
 
-show_debug_message(global.rikExists);
+//show_debug_message(global.rikExists);
