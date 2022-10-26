@@ -2,8 +2,8 @@
 // You can write your code in this editor
 openingText = ".";
 
-xBuffer = 10;
-yBuffer = 10;
+xBuffer = 7.5;
+yBuffer = 7.5;
 
 boxWidth = sprite_get_width(s_textBoxSprite) - (2*xBuffer);
 stringHeight = string_height(openingText);

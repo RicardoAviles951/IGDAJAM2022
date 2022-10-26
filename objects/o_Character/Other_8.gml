@@ -4,7 +4,7 @@
 // create text box for character at bar
 if(childTextBox == noone && !atBar)
 {
-	childTextBox = instance_create_layer(self.x - 105, self.y - 100, "DialogueLayer", o_TextBox, character);
+	childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
 	childTextBox.openingText = OpeningLineChoice(character.charName , character.charDrink);
 	childTextBox.patronName = character.charName;
 }
