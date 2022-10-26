@@ -1,18 +1,20 @@
 
-function IngredientClass(_type,_name,_icon,_index=0) constructor {
+function IngredientClass(_type,_name,_icon,_index=0,_drops = o_droplets_banshee) constructor {
 	type = _type;
 	name = _name;
 	icon = _icon;
-	index = _index//optional
+	index = _index;//optional
+	drops = _drops;
 	behavior = function()
 	{
 		switch(type){
 			case "spirit":
 			//Behavior for spirits when adding to cup
-			array_push(o_shaker.cup,name);
 			var str = object_get_name(index);
 			var obj = asset_get_index(str);
-			with(instance_create_layer(o_shaker.x+64,o_shaker.y-64,"Ingredients",obj)){
+			with(instance_create_layer(o_shaker.x+48,o_shaker.y-112,"Ingredients",obj)){
+				TweenEasyScale(1,1,2,2,0,15,EaseInOutBack);
+				TweenEasyRotate(0,135,0,15,EaseInOutQuad);
 				step = steps.interactive; //Set to this state for interactive gestures. 
 			}
 				show_debug_message(type);
@@ -28,8 +30,13 @@ function IngredientClass(_type,_name,_icon,_index=0) constructor {
 			break;
 			
 			case "sweet":
-				show_debug_message(type);
-				array_push(o_shaker.cup,name);
+			var str = object_get_name(index);
+			var obj = asset_get_index(str);
+			with(instance_create_layer(o_shaker.x+48,o_shaker.y-112,"Ingredients",obj)){
+				TweenEasyScale(1,1,3,3,0,15,EaseInOutQuad);
+				TweenEasyRotate(0,135,0,15,EaseInOutQuad);
+				step = steps.interactive; //Set to this state for interactive gestures. 
+			}
 			break;
 		}
 	}

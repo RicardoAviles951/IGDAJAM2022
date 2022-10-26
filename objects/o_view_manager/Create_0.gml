@@ -3,5 +3,7 @@ enum screen{
 	mix
 }
 
+
+
 scr_state = screen.bar;
 txt = "";

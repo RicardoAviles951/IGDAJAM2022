@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mixing",
-    "path": "folders/Objects/Mixing.yy",
+    "name": "Glasses",
+    "path": "folders/Objects/Mixing/Glasses.yy",
   },
 }

@@ -36,7 +36,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mixing",
-    "path": "folders/Objects/Mixing.yy",
+    "name": "More Mix Scene Stuff",
+    "path": "folders/Objects/Mixing/More Mix Scene Stuff.yy",
   },
 }

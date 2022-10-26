@@ -28,4 +28,4 @@ list[0] = spirits;
 list[1] = citrus;
 list[2] = flavors;
 full_length = 0; //Var used to hold array length 
-x_adj = 0;
+poofed = false;
