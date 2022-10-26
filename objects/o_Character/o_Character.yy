@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_Character",
   "spriteId": {
-    "name": "s_Rik_Normal",
-    "path": "sprites/s_Rik_Normal/s_Rik_Normal.yy",
+    "name": "s_Rik",
+    "path": "sprites/s_Rik/s_Rik.yy",
   },
   "solid": false,
   "visible": true,
