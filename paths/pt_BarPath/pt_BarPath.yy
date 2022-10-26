@@ -6,8 +6,8 @@
   "closed": false,
   "precision": 4,
   "points": [
-    {"speed":100.0,"x":864.0,"y":96.0,},
-    {"speed":100.0,"x":352.0,"y":96.0,},
+    {"speed":100.0,"x":864.0,"y":68.0,},
+    {"speed":100.0,"x":210.0,"y":68.0,},
   ],
   "parent": {
     "name": "Paths",

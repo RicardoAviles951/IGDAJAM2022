@@ -20,7 +20,7 @@ global.unsatisfiedCustomers = 0;
 global.conversationStarted = false;
 
 // variables for character spawn timer
-characterSpawnTimer = 5;
+characterSpawnTimer = 1;
 
 
 //show_debug_message(global.rikExists);

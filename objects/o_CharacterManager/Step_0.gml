@@ -10,6 +10,6 @@ if(global.rikExists == false || global.phillipaExists == false || global.quincyE
 	}
 	else if (characterSpawnTimer <= 0){
 		instance_create_layer(x, y, "Instances", o_Character);
-		characterSpawnTimer = 10;
+		characterSpawnTimer = 1;
 	}
 }

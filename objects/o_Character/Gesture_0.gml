@@ -6,7 +6,7 @@ if((self.x == path_get_point_x(pt_BarPath, 1) || self.x == path_get_point_x(pt_B
 {
 	instance_destroy(childTextBox);
 	childTextBox = noone;
-	childDialogueBox = instance_create_layer((room_width/3), (room_height / 1.25), "DialogueLayer", o_DialogueBox, character);
+	childDialogueBox = instance_create_layer(128, 260, "DialogueLayer", o_DialogueBox, character);
 	childDialogueBox.dialogueText = DialogueManagerScript(character.charName, character.charHappiness, character.charDrunkenness, character.charDrink);
 	childDialogueBox.dialogueCreator = self;
 	childDialogueBox.patronName = character.charName;
