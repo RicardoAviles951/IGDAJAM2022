@@ -3,6 +3,7 @@ with(o_view_manager)
 	switch(scr_state){
 		case screen.bar:
 			scr_state = screen.mix;
+
 			if(instance_exists(o_DialogueBox)){
 				o_DialogueBox.x = 16;
 				o_DialogueBox.y = 364;
@@ -16,9 +17,9 @@ with(o_view_manager)
 				secondChoiceBox.y = 392
 			}
 		break;
-		
 		case screen.mix:
 			scr_state = screen.bar;
+
 			if(instance_exists(o_DialogueBox)){
 				o_DialogueBox.x = 128;
 				o_DialogueBox.y = 260;
