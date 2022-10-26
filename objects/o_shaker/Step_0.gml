@@ -13,7 +13,7 @@ switch(global.mixstate){
 
 	break;
 }
-
+show_debug_message(cup);
 
 
 

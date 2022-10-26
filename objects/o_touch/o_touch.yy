@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mixing",
-    "path": "folders/Objects/Mixing.yy",
+    "name": "Managers",
+    "path": "folders/Objects/Mixing/Managers.yy",
   },
 }

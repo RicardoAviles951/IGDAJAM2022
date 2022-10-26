@@ -1,3 +1,4 @@
+type ="parent";
 startx = x;
 starty = y;
 moved = false;//Stores if moved from starting position.

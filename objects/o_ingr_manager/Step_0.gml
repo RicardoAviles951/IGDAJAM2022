@@ -1,6 +1,6 @@
 full_length = array_length(list);//Gets length of the master list array every frame. Important for FLICK event. 
 
-//Vars ised to determine positioning of created ingredients 
+//Vars used to determine positioning of created ingredients 
 var ypad = 32;
 var xpad = 128;
 
@@ -11,9 +11,14 @@ for (var i = 0; i <_len;i++)
 	if !instance_exists(array[i])//If object in array does NOT exist.
 	{
 		instance_create_layer(x+48+(xpad*i),y+ypad,"Ingredients",array[i]);//Create it at specifed place.
+		instance_create_depth(array[i].x,array[i].y,-9999,o_poof);
 	}
 	else//If it does exist, 
 	{
+		if array[i].visible == false{
+		instance_create_depth(array[i].x,array[i].y,-9999,o_poof)
+		
+		}
 		with(array[i])
 		{
 			visible = true;//then make it visible.

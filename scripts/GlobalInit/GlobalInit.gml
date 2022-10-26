@@ -8,6 +8,7 @@ global.gamestate = gamestates.bar;
 
 enum mixstates{
 	picking,
+	action,
 	shaking,
 	pouring,
 	finished
