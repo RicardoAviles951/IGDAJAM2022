@@ -11,3 +11,5 @@ drwn_sail = ["Drowned Sailor",s_icecubes,s_witchesbrew,s_honeyblossom,s_mermaidt
 
 mlist = [d_treasure,three_dwvs,orc_fash,gob_fire,drwn_sail];
 recipe = noone;
+x_adj = 0;
+y_adj = 0;
