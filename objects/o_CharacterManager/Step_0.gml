@@ -9,7 +9,7 @@ if(global.rikExists == false || global.phillipaExists == false || global.quincyE
 		characterSpawnTimer = characterSpawnTimer-delta_time/1000000;
 	}
 	else if (characterSpawnTimer <= 0){
-		instance_create_layer(x, y, "ObjectLayer", o_Character);
-		characterSpawnTimer = 10;
+		instance_create_layer(x, y, "Instances", o_Character);
+		characterSpawnTimer = 1;
 	}
 }

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_Character",
   "spriteId": {
-    "name": "s_charSprite",
-    "path": "sprites/s_charSprite/s_charSprite.yy",
+    "name": "s_Rik_Normal",
+    "path": "sprites/s_Rik_Normal/s_Rik_Normal.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,11 +33,12 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":17,"eventType":9,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":11,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Character Related",
+    "path": "folders/Objects/Character Related.yy",
   },
 }
