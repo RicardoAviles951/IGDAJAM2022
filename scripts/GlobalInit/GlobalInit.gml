@@ -11,7 +11,8 @@ enum mixstates{
 	action,
 	shaking,
 	pouring,
-	finished
+	finished,
+	give
 }
 
 global.mixstate = mixstates.picking;
