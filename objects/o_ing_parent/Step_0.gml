@@ -4,6 +4,11 @@ switch(step){
 		image_angle += cos(timer*.08*_sign)*.5*_sign;
 		timer++
 	break;
+	
+	case steps.interactive:
+		if animation_end() image_speed = 0;
+	break;
+	
 	case steps.anim:
 	if alarm[0] == -1{
 		instance_create_layer(o_shaker.x,o_shaker.y-64,"Instances",class.drops);

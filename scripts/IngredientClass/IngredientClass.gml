@@ -24,7 +24,7 @@ function IngredientClass(_type,_name,_icon,_index=0,_drops = o_droplets_banshee)
 			//Gets the object specific type (copy of what was tapped) and spawns it above the shaker. 
 			var str = object_get_name(index);
 			var obj = asset_get_index(str);
-			with(instance_create_layer(o_shaker.x,o_shaker.y-64,"Ingredients",obj)){
+			with(instance_create_layer(o_shaker.x,o_shaker.y-112,"Ingredients",obj)){
 				step = steps.interactive; //Set to this state for interactive gestures. 
 			}
 			break;

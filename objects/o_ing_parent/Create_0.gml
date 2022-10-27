@@ -16,3 +16,4 @@ rel_scale = 1;        //
 timer = 0;
 randomize();
 _sign = choose(-1,1)
+image_speed = 0;
