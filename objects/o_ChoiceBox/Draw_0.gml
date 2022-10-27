@@ -16,5 +16,5 @@ if(textCount < string_length(choiceText)){
 choicePart = string_copy(choiceText, 1, textCount);
 
 draw_set_halign(fa_center);
-draw_text_ext_transformed(x + 64, y + 3, choicePart, stringHeight, choiceBoxWidth * 2.5, .3, .3, 0);
+draw_text_ext_transformed(x + 64, y + 10, choicePart, stringHeight, choiceBoxWidth * 2.5, .65, .65, 0);
 

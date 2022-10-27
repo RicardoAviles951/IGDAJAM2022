@@ -3,7 +3,7 @@
 function OpeningLineChoice(name, drink){
 	text = ".";
 	if(name == "Rik"){
-		text = "Hey there! Name's " + name + ". I'll be your boss at this bar. Let's get you started. Make me a " + drink + ".";
+		text = "Hey there! Name's " + name + ". I'll be your boss at this bar. Let's get you started. Make me a " + drink + ". And make it fast my guy.";
 	}
 	else if(name == "Quincy"){
 		text = "Greetings friend. My name is " + name + ". Lovely day for a drink, yes? I'll have a " + drink + " please.";

@@ -17,6 +17,8 @@ fallBackFromBar = false;
 patronUnhappy = false;
 // bool to check if character is at bar
 atBar = false;
+// recipe checker reference
+recipeCheckerRef = o_recipe_checker;
 
 // check character names, and mark off if that character exists
 if (character.charName == "Rik") {
@@ -85,13 +87,9 @@ else if(global.BarPath1inUse && !global.BarPath2inUse && global.BarPath3inUse)
 {
 	randomize();
 	path_start(pt_BarPath2, 3, path_action_stop, true);
-	if(self.path_index == pt_BarPath){
-		global.BarPath1inUse = true;
-		show_debug_message("Path1 in use")
-	}
-	else if(self.path_index == pt_BarPath3){
-		global.BarPath3inUse = true;
-		show_debug_message("Path3 in use")
+	if(self.path_index == pt_BarPath2){
+		global.BarPath2inUse = true;
+		show_debug_message("Path2 in use")
 	}
 }
 	// path 2 and 3 not available

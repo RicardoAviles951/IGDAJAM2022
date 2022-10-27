@@ -31,11 +31,11 @@ if(!is_array(dialogueText[dialogueSection])){
 		draw_set_color(c_green);
 	}
 	draw_set_halign(fa_center);
-	draw_text_transformed(x + (dialogueBoxWidth/2), y+5, patronName, .5, .5, 0);
+	draw_text_transformed(x + (dialogueBoxWidth/2), y+5, patronName, .7, .7, 0);
 //draw text
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);
-	draw_text_ext_transformed(x + xBuffer, y + (stringHeight/1.2), dialoguePart, stringHeight, dialogueBoxWidth * 2.8, .35, .35, 0);
+	draw_text_ext_transformed(x + xBuffer, y + (stringHeight/1.8), dialoguePart, (stringHeight/1.8), dialogueBoxWidth * 1.65, .6, .6, 0);
 	dialogueChoice1 = false;
 	dialogueChoice2 = false;
 }
@@ -64,11 +64,11 @@ else if(is_array(dialogueText[dialogueSection])){
 			draw_set_color(c_green);
 		}
 		draw_set_halign(fa_center);
-		draw_text_transformed(x + (dialogueBoxWidth/2), y+5, patronName, .5, .5, 0);
+		draw_text_transformed(x + (dialogueBoxWidth/2), y+5, patronName, .7, .7, 0);
 	//draw text
 		draw_set_color(c_white);
 		draw_set_halign(fa_left);
-		draw_text_ext_transformed(x + xBuffer, y + (stringHeight/1.2), dialoguePart, stringHeight, dialogueBoxWidth * 2.8, .35, .35, 0);
+		draw_text_ext_transformed(x + xBuffer, y + (stringHeight/1.8), dialoguePart, (stringHeight/1.8), dialogueBoxWidth * 1.65, .6, .6, 0);
 	}
 	else if(dialogueChoice2){
 		if(charCount < string_length(dialogueText[dialogueSection][1])){
@@ -94,10 +94,10 @@ else if(is_array(dialogueText[dialogueSection])){
 			draw_set_color(c_green);
 		}
 		draw_set_halign(fa_center);
-		draw_text_transformed(x + (dialogueBoxWidth/2), y+5, patronName, .5, .5, 0);
+		draw_text_transformed(x + (dialogueBoxWidth/2), y+5, patronName, .7, .7, 0);
 	//draw text
 		draw_set_color(c_white);
 		draw_set_halign(fa_left);
-		draw_text_ext_transformed(x + xBuffer, y + (stringHeight/1.2), dialoguePart, stringHeight, dialogueBoxWidth * 2.8, .35, .35, 0);
+		draw_text_ext_transformed(x + xBuffer, y + (stringHeight/1.8), dialoguePart, (stringHeight/1.8), dialogueBoxWidth * 1.65, .6, .6, 0);
 	}
 }

@@ -9,9 +9,9 @@ global.jowwExists = false;
 global.brockExists = false;
 
 // global variable's to track if paths are in use
-global.BarPath1inUse = false;
+global.BarPath1inUse = true;
 global.BarPath2inUse = true;
-global.BarPath3inUse = true;
+global.BarPath3inUse = false;
 
 // global variable tracking customer satisfaction
 global.unsatisfiedCustomers = 0;

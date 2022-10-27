@@ -4,8 +4,8 @@ with(o_view_manager)
 		case screen.bar:
 			scr_state = screen.mix;
 			if(instance_exists(o_DialogueBox)){
-				o_DialogueBox.x = 16;
-				o_DialogueBox.y = 364;
+				o_DialogueBox.x = 48;
+				o_DialogueBox.y = 380;
 			}
 			if(instance_exists(o_ChoiceBox)){
 				var firstChoiceBox = instance_find(o_ChoiceBox, 0)
@@ -21,8 +21,8 @@ with(o_view_manager)
 		case screen.mix:
 			scr_state = screen.bar;
 						if(instance_exists(o_DialogueBox)){
-				o_DialogueBox.x = 128;
-				o_DialogueBox.y = 260;
+				o_DialogueBox.x = 144;
+				o_DialogueBox.y = 280;
 			}
 			if(instance_exists(o_ChoiceBox)){
 				var firstChoiceBox = instance_find(o_ChoiceBox, 0)

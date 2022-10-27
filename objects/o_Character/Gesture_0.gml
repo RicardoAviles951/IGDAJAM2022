@@ -6,9 +6,13 @@ if((self.x == path_get_point_x(pt_BarPath, 1) || self.x == path_get_point_x(pt_B
 {
 	instance_destroy(childTextBox);
 	childTextBox = noone;
-	childDialogueBox = instance_create_layer(128, 260, "DialogueLayer", o_DialogueBox, character);
+	childDialogueBox = instance_create_layer(144, 280, "DialogueLayer", o_DialogueBox, character);
 	childDialogueBox.dialogueText = DialogueManagerScript(character.charName, character.charHappiness, character.charDrunkenness, character.charDrink);
 	childDialogueBox.dialogueCreator = self;
 	childDialogueBox.patronName = character.charName;
 	global.conversationStarted = true;
+	if(character.charDrink == "Beer"){
+		recipeCheckerRef.current_drink = recipeCheckerRef.dragons_treasure;
+		show_debug_message("DrinkSet");
+	}
 }
