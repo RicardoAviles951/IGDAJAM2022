@@ -20,6 +20,50 @@ function Character() constructor{
 	charDrunkenness = 5;
 	charDrunkennessMax = charDrunkenness;
 	charDrink = "";
+	firstArrival = false;
+	switch(charName){
+		case "Rik":
+			charHappiness = 90;
+			charHappinessMax = charHappiness
+			charDrunkenness = 8;
+			charDrunkennessMax = charDrunkenness;
+		break;
+		
+		case "Phillipa":
+			charHappiness = 50;
+			charHappinessMax = charHappiness
+			charDrunkenness = 6;
+			charDrunkennessMax = charDrunkenness;
+		break;
+
+		case "Quincy":
+			charHappiness = 120;
+			charHappinessMax = charHappiness
+			charDrunkenness = 8;
+			charDrunkennessMax = charDrunkenness;
+		break;
+	
+		case "Brock":
+			charHappiness = 110;
+			charHappinessMax = charHappiness
+			charDrunkenness = 10;
+			charDrunkennessMax = charDrunkenness;
+		break;
+	
+		case "Fairy":
+			charHappiness = 80;
+			charHappinessMax = charHappiness
+			charDrunkenness = 4;
+			charDrunkennessMax = charDrunkenness;
+		break;
+	
+		case "Joww":
+			charHappiness = 70;
+			charHappinessMax = charHappiness
+			charDrunkenness = 12;
+			charDrunkennessMax = charDrunkenness;
+		break;
+	}
 	
 	charDrinkSelect = function() {
 		switch(charName)

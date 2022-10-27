@@ -1,6 +1,10 @@
 /// @description Go back from Bar
 // You can write your code in this editor
 
+if(!character.firstArrival){
+	character.firstArrival = true;
+}
+
 if(self.x == path_get_point_x(pt_BarPath, 1))
 {
 	path_reverse(pt_BarPath);

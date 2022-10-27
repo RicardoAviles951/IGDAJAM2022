@@ -5,7 +5,7 @@
 if(childTextBox == noone && !atBar)
 {
 	childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
-	childTextBox.openingText = OpeningLineChoice(character.charName, character.charDrink);
+	childTextBox.openingText = OpeningLineChoice(character.charName, character.charHappiness, character.charHappinessMax, character.charDrunkenness, character.charDrunkennessMax, character.firstArrival);
 	childTextBox.patronName = character.charName;
 }
 

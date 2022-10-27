@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function PhillipaDialogueManager(name, happiness, drunkenness, drink){
+function PhillipaDialogueManager(name, happiness, happinessMax, drunkenness, drunkennessMax, firstArrival, drink){
 	var dialogue = ".";
 	
 	if(name == "Phillipa")
