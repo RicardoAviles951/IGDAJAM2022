@@ -7,6 +7,8 @@ function ResetMix(){
 		array_delete(cup,0,len);
 		x = startx;
 		y = starty;
+		image_alpha = 1;
+		sprite_index = s_shaker_open;
 	}
 	with(o_glass_parent){
 		x = startx;
@@ -18,5 +20,6 @@ function ResetMix(){
 	with(o_icewell){
 		added = false;
 	}
+	
 
 }
