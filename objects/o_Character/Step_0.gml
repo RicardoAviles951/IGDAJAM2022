@@ -26,7 +26,7 @@ if(fallBackFromBar){
 if(character.charHappiness > character.charHappinessMax){
 	character.charHappiness = character.charHappinessMax;
 }
-
+// drunkenness meter to countdown return to bar
 if(drunkennessMeterOn){
 	if(character.charDrunkenness > 0){
 		character.charDrunkenness = character.charDrunkenness-delta_time/1000000;
@@ -36,4 +36,8 @@ if(drunkennessMeterOn){
 		character.charDrunkenness = character.charDrunkennessMax;
 		drunkennessMeterOn = false;
 	}
+}
+// check to see if conversation is over, then make order false
+if(!global.conversationStarted){
+	character.charOrdering = false;
 }

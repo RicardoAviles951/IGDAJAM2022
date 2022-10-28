@@ -21,6 +21,7 @@ function Character() constructor{
 	charDrunkennessMax = charDrunkenness;
 	charDrink = "";
 	firstArrival = false;
+	charOrdering = false;
 	switch(charName){
 		case "Rik":
 			charHappiness = 90;
@@ -66,48 +67,52 @@ function Character() constructor{
 	}
 	
 	charDrinkSelect = function() {
+		var drink = ".";
 		switch(charName)
 		{
 			case "Rik":
-				if(charHappiness < 50){
-					charDrink = "more Beer";
-				}
-				else if(charHappiness > 50){
-					charDrink = "Beer";
-				}
+				randomize();
+				drink = choose("Dragon's Treasure", "Dwarven Ale", "Orc Fashioned");
+				//if(charHappiness < 50){
+				//	charDrink = "more Beer";
+				//}
+				//else if(charHappiness > 50){
+				//	charDrink = "Beer";
+				//}
 			break;
 			case "Phillipa":
-				if(charHappiness < 50){
-					charDrink = "Vodka";
-				}
-				else if(charHappiness > 50){
-					charDrink = "Wine";
-				}
+				//if(charHappiness < 50){
+				//	charDrink = "Vodka";
+				//}
+				//else if(charHappiness > 50){
+				//	charDrink = "Wine";
+				//}
 			break;
 			case "Quincy":
-				if(charHappiness < 50){
-					charDrink = "Whiskey";
-				}
-				else if(charHappiness > 50){
-					charDrink = "Scotch";
-				}
+				//if(charHappiness < 50){
+				//	charDrink = "Whiskey";
+				//}
+				//else if(charHappiness > 50){
+				//	charDrink = "Scotch";
+				//}
 			break;
 			case "Brock":
-				if(charHappiness < 50){
-					charDrink = "Rum";
-				}
-				else if(charHappiness > 50){
-					charDrink = "Beer";
-				}
+				//if(charHappiness < 50){
+				//	charDrink = "Rum";
+				//}
+				//else if(charHappiness > 50){
+				//	charDrink = "Beer";
+				//}
 			break;
 			case "Joww":
-				if(charHappiness < 50){
-					charDrink = "Vodka";
-				}
-				else if(charHappiness > 50){
-					charDrink = "Gin";
-				}
+				//if(charHappiness < 50){
+				//	charDrink = "Vodka";
+				//}
+				//else if(charHappiness > 50){
+				//	charDrink = "Gin";
+				//}
 			break;
 		}
+		return drink;
 	}
 }
