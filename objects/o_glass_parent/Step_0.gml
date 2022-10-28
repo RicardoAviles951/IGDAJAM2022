@@ -14,3 +14,7 @@ if o_shaker.shaking == true{
 	x = startx;
 	y = starty;
 }
+if global.mixstate == mixstates.finished{
+	
+if being_served FinalDrinkSprite();
+}

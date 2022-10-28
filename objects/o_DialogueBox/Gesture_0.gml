@@ -7,11 +7,11 @@ if(dialogueSection + 1 < array_length_1d(dialogueText) && self.visible == true){
 }
 if (is_array(dialogueText[dialogueSection]) && self.visible == true){
 	if(!dialogueChoice1 && !dialogueChoice2){
-		if(viewManager.scr_state == screen.bar){
+		if(global.scr_state == screen.bar){
 			choiceBox1 = instance_create_layer(80, 284, "DialogueLayer", o_ChoiceBox);
 			choiceBox2 = instance_create_layer(432, 284, "DialogueLayer", o_ChoiceBox);
 		}
-		else if(viewManager.scr_state == screen.mix){
+		else if(global.scr_state == screen.mix){
 			choiceBox1 = instance_create_layer(48, 392, "DialogueLayer", o_ChoiceBox);
 			choiceBox2 = instance_create_layer(288, 392, "DialogueLayer", o_ChoiceBox);
 		}

@@ -1,3 +1,4 @@
+audio_play_sound(snd_uiaccept,1,false);
 // global variables to track if characters have spawnned
 global.rikExists = false;
 global.phillipaExists = false;

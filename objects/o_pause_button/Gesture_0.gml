@@ -1,3 +1,4 @@
+audio_play_sound(snd_uiaccept,1,false);
 is_paused = !is_paused;
 if is_paused{
 instance_deactivate_all(true);

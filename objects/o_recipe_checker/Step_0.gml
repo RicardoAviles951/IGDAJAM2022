@@ -10,3 +10,4 @@ if global.mixstate == mixstates.finished{
 		//show_debug_message("NOT EQUALS");
 	}
 }
+//show_debug_message(current_drink);
