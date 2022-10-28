@@ -8,7 +8,8 @@ switch(character.charName){
 	break;
 	
 	case "Phillipa":
-		draw_sprite(s_Phillipa_Normal, 0, x, y);
+		draw_sprite(s_Phillipa_Normal, 0, x + 20, y + 20);
+		draw_healthbar(self.x + 20, self.y + 175, self.x + 162, self.y + 195, min((character.charHappiness/character.charHappinessMax) * 100), c_black, c_red, c_green, 0, true, true);
 	break;
 	
 	case "Quincy":

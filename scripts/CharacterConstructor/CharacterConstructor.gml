@@ -30,7 +30,7 @@ function Character() constructor{
 		break;
 		
 		case "Phillipa":
-			charHappiness = 50;
+			charHappiness = 60;
 			charHappinessMax = charHappiness
 			charDrunkenness = 6;
 			charDrunkennessMax = charDrunkenness;
@@ -44,7 +44,7 @@ function Character() constructor{
 		break;
 	
 		case "Brock":
-			charHappiness = 110;
+			charHappiness = 100;
 			charHappinessMax = charHappiness
 			charDrunkenness = 10;
 			charDrunkennessMax = charDrunkenness;
@@ -58,7 +58,7 @@ function Character() constructor{
 		break;
 	
 		case "Joww":
-			charHappiness = 70;
+			charHappiness = 80;
 			charHappinessMax = charHappiness
 			charDrunkenness = 12;
 			charDrunkennessMax = charDrunkenness;

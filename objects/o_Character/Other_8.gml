@@ -4,7 +4,21 @@
 // create text box for character at bar
 if(childTextBox == noone && !atBar)
 {
-	childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
+	if(character.charName == "Rik"){
+		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
+	}
+	else if(character.charName == "Quincy"){
+		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
+	}
+	else if(character.charName == "Phillipa"){
+		childTextBox = instance_create_layer(self.x - 10, self.y - 55, "DialogueLayer", o_TextBox, character);
+	}
+	else if(character.charName == "Brock"){
+		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
+	}
+	else if(character.charName == "Joww"){
+		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
+	}
 	childTextBox.openingText = OpeningLineChoice(character.charName, character.charHappiness, character.charHappinessMax, character.charDrunkenness, character.charDrunkennessMax, character.firstArrival);
 	childTextBox.patronName = character.charName;
 }

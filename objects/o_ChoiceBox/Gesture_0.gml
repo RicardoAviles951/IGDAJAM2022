@@ -6,6 +6,8 @@ if(self.id == choiceBoxCreator.choiceBox1.id){
 	choiceBoxCreator.dialogueSection += 1;
 	choiceBoxCreator.charCount = 0;
 	choiceBoxCreator.visibilityTimerOn = true;
+	// effect on characters happiness
+	choiceBoxCreator.dialogueCreator.character.charHappiness = choiceBoxCreator.dialogueCreator.character.charHappiness + 10;
 	choiceBoxCreator.choiceBox1 = noone;
 	choiceBoxCreator.choiceBox2 = noone;
 	instance_destroy(o_ChoiceBox);
@@ -16,6 +18,8 @@ else if (self.id == choiceBoxCreator.choiceBox2.id){
 	choiceBoxCreator.dialogueSection += 1;
 	choiceBoxCreator.charCount = 0;
 	choiceBoxCreator.visibilityTimerOn = true;
+	// effect on characters happiness
+	choiceBoxCreator.dialogueCreator.character.charHappiness = choiceBoxCreator.dialogueCreator.character.charHappiness - 5;
 	choiceBoxCreator.choiceBox1 = noone;
 	choiceBoxCreator.choiceBox2 = noone;
 	instance_destroy(o_ChoiceBox);
