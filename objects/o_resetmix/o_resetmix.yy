@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_resetmix",
   "spriteId": {
-    "name": "s_fruit",
-    "path": "sprites/s_fruit/s_fruit.yy",
+    "name": "s_reset",
+    "path": "sprites/s_reset/s_reset.yy",
   },
   "solid": false,
   "visible": true,
