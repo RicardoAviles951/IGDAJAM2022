@@ -5,5 +5,5 @@ enum screen{
 
 
 
-scr_state = screen.bar;
+global.scr_state = screen.bar;
 txt = "";

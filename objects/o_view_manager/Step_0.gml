@@ -1,4 +1,4 @@
-switch(scr_state){
+switch(global.scr_state){
 	case screen.bar:
 		view_visible[0] = true;
 		view_visible[1] = false;
