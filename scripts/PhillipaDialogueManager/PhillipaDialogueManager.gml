@@ -21,17 +21,17 @@ function PhillipaDialogueManager(name, happiness, happinessMax, drunkenness, dru
 		}
 		// happy and drunk text in text box
 		else if ((happiness >= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-			conversation1 = ["This is happy drunk dialogue 1", "This character is happy drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation2 = ["This is happy drunk dialogue 2", "This character is happy drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation3 = ["This is happy drunk dialogue 3", "This character is happy drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation1 = ["This is happy drunk dialogue 1 and I want a " + drink + ".", "This character is happy drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation2 = ["This is happy drunk dialogue 2 and I want a " + drink + ".", "This character is happy drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation3 = ["This is happy drunk dialogue 3 and I want a " + drink + ".", "This character is happy drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
 			randomize();
 			dialogue = choose(conversation1, conversation2, conversation3);		
 		}
 		// angry and sober text in text box
 		else if ((happiness <= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
-			conversation1 = ["This is angry sober dialogue 1", "This character is angry sober.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation2 = ["This is angry sober dialogue 2", "This character is angry sober.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation3 = ["This is angry sober dialogue 3", "This character is angry sober.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation1 = ["This is angry sober dialogue 1 and I want a " + drink + ".", "This character is angry sober.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation2 = ["This is angry sober dialogue 2 and I want a " + drink + ".", "This character is angry sober.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation3 = ["This is angry sober dialogue 3 and I want a " + drink + ".", "This character is angry sober.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
 			randomize();
 			dialogue = choose(conversation1, conversation2, conversation3);	
 		}
