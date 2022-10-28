@@ -5,8 +5,8 @@
 global.rikExists = true;
 global.phillipaExists = false;
 global.quincyExists = true;
-global.jowwExists = true;
-global.brockExists = true;
+global.jowwExists	= true;
+global.brockExists	= true;
 
 // global variable's to track if paths are in use
 global.BarPath1inUse = true;
