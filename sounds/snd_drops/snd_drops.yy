@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_poof",
+  "name": "snd_drops",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_poof.wav",
-  "duration": 0.85356,
+  "soundFile": "snd_drops.mp3",
+  "duration": 1.38449,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -14,6 +14,7 @@ if step == steps.interactive{
 					if image_index < 2{
 						image_speed = 1;
 					}
+					audio_play_sound(snd_cut,2,false);
 				break;
 				
 				case "sweet":

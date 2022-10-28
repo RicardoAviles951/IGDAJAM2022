@@ -22,6 +22,7 @@ switch(global.mixstate){
 		switch(class.type)
 			{
 				case "spirit":
+				audio_sound_gain(snd_drops,1,0);
 					//show_message("POUR!");
 					var copy = class.name;
 					with(o_shaker){//Pushed object ids to cup array
@@ -31,8 +32,10 @@ switch(global.mixstate){
 						instance_destroy();
 						global.mixstate = mixstates.picking;
 					}
-					var t = time_source_create(time_source_game,2,time_source_units_seconds,animate);
+					var t = time_source_create(time_source_game,1,time_source_units_seconds,animate);
 					time_source_start(t);
+					audio_play_sound(snd_drops,2,false);
+					audio_sound_gain(snd_drops,0,1000);
 					step = steps.anim;
 				break;
 	
@@ -50,6 +53,7 @@ switch(global.mixstate){
 				break;
 	
 				case "sweet":
+				audio_sound_gain(snd_drops,1,0);
 					//show_message("Pour BITTERS");
 					var copy = class.name;
 					with(o_shaker){//Pushed object ids to cup array
@@ -59,8 +63,10 @@ switch(global.mixstate){
 						instance_destroy();
 						global.mixstate = mixstates.picking;
 					}
-					var t = time_source_create(time_source_game,2,time_source_units_seconds,animate);
+					var t = time_source_create(time_source_game,1,time_source_units_seconds,animate);
 					time_source_start(t);
+					audio_play_sound(snd_drops,2,false);
+					audio_sound_gain(snd_drops,0,1000);
 					step = steps.anim;
 				break;
 			}

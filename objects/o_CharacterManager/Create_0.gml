@@ -7,7 +7,6 @@ global.phillipaExists = false;
 global.quincyExists = true;
 global.laifExists = true;
 global.brockExists = true;
-
 // global variable's to track if paths are in use
 // Path one goes to the center of the bar
 global.BarPath1inUse = false;
