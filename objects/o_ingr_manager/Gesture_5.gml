@@ -25,3 +25,6 @@ for (var k = 0; k < array_length(array);k++)
 			step = steps.waiting;
 		}
 	}
+	if !audio_is_playing(snd_poof){
+	audio_play_sound(snd_poof,2,false);
+}

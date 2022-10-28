@@ -10,3 +10,9 @@ else{
 }
 //x = startx;
 //y = starty;
+if audio_is_playing(snd_shake){
+	//audio_stop_sound(snd_shake)
+	var vol = audio_sound_get_gain(snd_shake);
+	audio_sound_gain(snd_shake,0,200);
+	if vol <.1 audio_stop_sound(snd_shake);
+}
