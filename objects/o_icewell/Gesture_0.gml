@@ -1,5 +1,6 @@
 if global.mixstate == mixstates.picking
 {
+	audio_play_sound(snd_ice,2,false);
 	instance_create_layer(room_width/2,o_shaker.y-96,"Ingredients",o_ice_cubes);
 	instance_create_layer(room_width/2-16,o_shaker.y-128,"Ingredients",o_ice_cubes);
 	show_debug_message("ICE");
