@@ -8,8 +8,8 @@ if (happinessMeterOn){
 		character.charHappiness = character.charHappiness-delta_time/1000000;
 	}
 	else if(character.charHappiness <= 0 && !patronUnhappy){
-		global.unsatisfiedCustomers += 1;
-		patronUnhappy = true;
+		//global.unsatisfiedCustomers += 1;
+		//patronUnhappy = true;
 	}
 }
 // turn off happiness timer

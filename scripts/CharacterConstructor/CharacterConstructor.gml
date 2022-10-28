@@ -6,13 +6,13 @@ function Character() constructor{
 	else if(global.rikExists && !global.quincyExists) {charName = "Quincy";}
 	else if(global.rikExists && global.quincyExists && !global.phillipaExists) {charName = "Phillipa";}
 	else if(global.rikExists && global.quincyExists && global.phillipaExists && !global.brockExists) {charName = "Brock";}
-	else if(global.rikExists && global.quincyExists && global.phillipaExists && global.brockExists && !global.jowwExists) {charName = "Joww";}
-	else if(global.rikExists && global.quincyExists && global.phillipaExists && global.brockExists && global.jowwExists) { 
+	else if(global.rikExists && global.quincyExists && global.phillipaExists && global.brockExists && !global.laifExists) {charName = "Laif";}
+	else if(global.rikExists && global.quincyExists && global.phillipaExists && global.brockExists && global.laifExists) { 
 		global.rikExists = false;
 		global.quincyExists = false;
 		global.phillipaExists = false;
 		global.brockExists = false;
-		global.jowwExists = false;
+		global.laifExists = false;
 		charName = "Rik";
 		}
 	charHappiness = 100;
@@ -51,14 +51,7 @@ function Character() constructor{
 			charDrunkennessMax = charDrunkenness;
 		break;
 	
-		case "Fairy":
-			charHappiness = 80;
-			charHappinessMax = charHappiness
-			charDrunkenness = 4;
-			charDrunkennessMax = charDrunkenness;
-		break;
-	
-		case "Joww":
+		case "Laif":
 			charHappiness = 80;
 			charHappinessMax = charHappiness
 			charDrunkenness = 12;
@@ -104,7 +97,7 @@ function Character() constructor{
 				//	charDrink = "Beer";
 				//}
 			break;
-			case "Joww":
+			case "Laif":
 				//if(charHappiness < 50){
 				//	charDrink = "Vodka";
 				//}

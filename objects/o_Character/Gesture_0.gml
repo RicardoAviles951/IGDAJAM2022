@@ -67,7 +67,7 @@ if((self.x == path_get_point_x(pt_BarPath, 1) || self.x == path_get_point_x(pt_B
 				recipeCheckerRef.current_drink = recipeCheckerRef.dwarven_ale;
 			}
 		break;
-		case "Joww":
+		case "Laif":
 			if(character.charDrink == "Dragon's Treasure"){
 				recipeCheckerRef.current_drink = recipeCheckerRef.dragons_treasure;
 			}
@@ -81,10 +81,4 @@ if((self.x == path_get_point_x(pt_BarPath, 1) || self.x == path_get_point_x(pt_B
 	}
 	global.conversationStarted = true;
 	character.charOrdering = true;
-	//switch (character.charName
 }
-
-		/*if(character.charDrink == "Beer"){
-			recipeCheckerRef.current_drink = recipeCheckerRef.dragons_treasure;
-			show_debug_message("DrinkSet");
-		}*/

@@ -20,9 +20,9 @@ function DrinkSelector(name){
 			break;
 			case "Brock":
 				randomize();
-				drink = choose("Dragon's Treasure", "Dwarven Ale", "Orc Fashioned", "Three Dwarves");
+				drink = choose("Dragon's Treasure", "Orc Fashioned", "Three Dwarves");
 			break;
-			case "Joww":
+			case "Laif":
 				randomize();
 				drink = choose("Dragon's Treasure", "Orc Fashioned");
 			break;

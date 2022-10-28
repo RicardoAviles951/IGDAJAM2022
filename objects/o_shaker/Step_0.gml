@@ -7,7 +7,7 @@ switch(global.mixstate){
 	for (var i =0; i<l;i++)    //
 	{
 		ing_draw = cup[i];
-		show_debug_message(cup[i]);
+		//show_debug_message(cup[i]);
 	}
 
 

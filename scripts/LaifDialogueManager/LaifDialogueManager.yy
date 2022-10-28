@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "JowwDialogueManager",
+  "name": "LaifDialogueManager",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

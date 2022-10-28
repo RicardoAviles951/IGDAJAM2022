@@ -101,33 +101,9 @@ function OpeningLineChoice(name, happiness, happinessMax, drunkenness, drunkenne
 			}
 		break;
 		
-		case "Fairy":
-			if(!firstArrival){
-				text = ".";
-			}
-			else if (firstArrival){
-			// happy and sober text in text box
-				if ((happiness >= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
-					text = "?";
-				}
-			// happy and drunk text in text box
-				else if ((happiness >= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-					text = "?";
-				}
-			// angry and sober text in text box
-				else if ((happiness <= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
-					text = "!";
-				}
-			// angry and drunk text in text box
-				else if ((happiness <= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-					text = "*";
-				}
-			}
-		break;
-		
-		case "Joww":
+		case "Laif":
 					if(!firstArrival){
-				text = "Haha! Someone new! Wonderful. My name is Joww, and I'd love a drink!";
+				text = "Haha! Someone new! Wonderful. My name is Laif, and I'd love a drink!";
 			}
 			else if (firstArrival){
 			// happy and sober text in text box
@@ -148,21 +124,6 @@ function OpeningLineChoice(name, happiness, happinessMax, drunkenness, drunkenne
 				}
 			}
 		break;
-	//if(name == "Rik"){
-	//	text = "Hey there! Name's " + name + ". I'll be your boss at this bar. Let's get you started. Make me a " + drink + ". And make it fast my guy.";
-	//}
-	//else if(name == "Quincy"){
-	//	text = "Greetings friend. My name is " + name + ". Lovely day for a drink, yes? I'll have a " + drink + " please.";
-	//}
-	//else if(name == "Phillipa"){
-	//	text = "Hello. My name is " + name + ", in case you were unaware. Make me a " + drink + ".";
-	//}
-	//else if(name == "Brock"){
-	//	text = "Hi. Could I get a " + drink + ". Name's " + name + " by the way.";
-	//}
-	//else if(name == "Joww"){
-	//	text = "Oi! Name's " + name + ". I'm thirsty. Make me a " + drink + ".";
-	//}
 	}
 	return text;
 }

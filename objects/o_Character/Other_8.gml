@@ -16,7 +16,7 @@ if(childTextBox == noone && !atBar)
 	else if(character.charName == "Brock"){
 		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
 	}
-	else if(character.charName == "Joww"){
+	else if(character.charName == "Laif"){
 		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
 	}
 	childTextBox.openingText = OpeningLineChoice(character.charName, character.charHappiness, character.charHappinessMax, character.charDrunkenness, character.charDrunkennessMax, character.firstArrival);
