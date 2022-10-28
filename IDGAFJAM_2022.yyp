@@ -27,7 +27,7 @@
     {"id":{"name":"s_droplets_gorgoberry","path":"sprites/s_droplets_gorgoberry/s_droplets_gorgoberry.yy",},"order":8,},
     {"id":{"name":"TGMS_EasingEquations","path":"scripts/TGMS_EasingEquations/TGMS_EasingEquations.yy",},"order":5,},
     {"id":{"name":"s_cheatsheet","path":"sprites/s_cheatsheet/s_cheatsheet.yy",},"order":5,},
-    {"id":{"name":"o_pause","path":"objects/o_pause/o_pause.yy",},"order":11,},
+    {"id":{"name":"o_pause_button","path":"objects/o_pause_button/o_pause_button.yy",},"order":11,},
     {"id":{"name":"s_honeyblossom","path":"sprites/s_honeyblossom/s_honeyblossom.yy",},"order":0,},
     {"id":{"name":"snd_doorchime","path":"sounds/snd_doorchime/snd_doorchime.yy",},"order":11,},
     {"id":{"name":"s_droplets_mermaid","path":"sprites/s_droplets_mermaid/s_droplets_mermaid.yy",},"order":4,},

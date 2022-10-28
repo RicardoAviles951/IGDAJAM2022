@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_pause",
+  "name": "o_pause_button",
   "spriteId": {
     "name": "s_fruit",
     "path": "sprites/s_fruit/s_fruit.yy",
