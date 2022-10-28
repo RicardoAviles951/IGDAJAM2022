@@ -7,7 +7,7 @@ switch(global.mixstate){
 	var _x = guiW/3-96;
 	var _y = guiH/3;
 	var l = array_length(cup);//Stores the lengths of the cup array
-	if o_view_manager.scr_state = o_view_manager.screen.mix{
+	if global.scr_state == screen.mix{
 	for (var i =0; i<l;i++)    //
 	{
 		var c = c_white;

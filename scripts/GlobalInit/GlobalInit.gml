@@ -16,5 +16,5 @@ enum mixstates{
 }
 
 global.mixstate = mixstates.picking;
-
+global.gameover = false;
 global.ID = noone;
