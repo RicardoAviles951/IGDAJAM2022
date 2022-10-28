@@ -2,6 +2,7 @@ with(o_view_manager)
 {
 	switch(scr_state){
 		case screen.bar:
+		audio_play_sound(snd_swoosh,3,false);
 			scr_state = screen.mix;
 			if(instance_exists(o_DialogueBox)){
 				o_DialogueBox.x = 48;
@@ -19,6 +20,7 @@ with(o_view_manager)
 		break;
 		
 		case screen.mix:
+		audio_play_sound(snd_swoosh,3,false);
 			scr_state = screen.bar;
 						if(instance_exists(o_DialogueBox)){
 				o_DialogueBox.x = 144;
