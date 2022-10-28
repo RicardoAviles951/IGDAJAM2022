@@ -44,7 +44,7 @@ switch(global.mixstate){
 				}
 			//Move to finished state	
 			var gotobar = function(){
-				o_view_manager.scr_state = screen.bar;
+				global.scr_state = screen.bar;
 				image_xscale = 1;
 				image_yscale = 1;
 				x = room_width/2;
@@ -53,6 +53,10 @@ switch(global.mixstate){
 			}
 			var t = time_source_create(time_source_game,1,time_source_units_seconds,gotobar);
 			time_source_start(t);
+			if o_recipe_checker.correct{
+				FinalDrinkSprite();
+			}
+			being_served = true;
 			global.mixstate = mixstates.finished;
 		}
 	break;

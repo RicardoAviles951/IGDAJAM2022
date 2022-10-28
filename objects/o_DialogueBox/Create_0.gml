@@ -26,8 +26,7 @@ choiceBox2 = noone;
 // variables to see if choice 1 or 2 is true
 dialogueChoice1 = false;
 dialogueChoice2 = false;
-// variable to reference view_manager
-viewManager = o_view_manager;
+
 // variable for visibility timer
 visibilityTimerOn = false;
 visibilityTimer = 1;

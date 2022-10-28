@@ -11,6 +11,7 @@ function ResetMix(){
 		sprite_index = s_shaker_open;
 	}
 	with(o_glass_parent){
+		sprite_index = spr;
 		x = startx;
 		y = starty;
 		moved = false;//Stores if moved from starting position.

@@ -1,3 +1,4 @@
+audio_play_sound(snd_uiaccept,1,false);
 if tapped == false{
 TweenEasyScale(1,1,1.2,1.2,0,15,EaseInOutQuad,TWEEN_MODE_BOUNCE);
 image_index = 1;
