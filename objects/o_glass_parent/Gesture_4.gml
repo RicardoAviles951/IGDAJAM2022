@@ -1,8 +1,12 @@
 if global.mixstate == mixstates.give
 {
-	if place_meeting(x,y,o_Character) && o_Character.character.charOrdering == true{
+	if place_meeting(x,y,o_Character){
 		show_message("GIVEN");
-		event_perform_object(o_Character, ev_other, ev_user2);
+		with (o_Character){ 
+				if(character.charOrdering){
+					GiveDrinkScript()
+					} 
+			}
 		global.conversationStarted = false;
 		ResetMix();
 	}

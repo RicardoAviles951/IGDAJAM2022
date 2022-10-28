@@ -3,7 +3,7 @@
 
 // global variables to track if characters have spawnned
 global.rikExists = false;
-global.phillipaExists = true;
+global.phillipaExists = false;
 global.quincyExists = true;
 global.laifExists = true;
 global.brockExists = true;
@@ -12,7 +12,7 @@ global.brockExists = true;
 // Path one goes to the center of the bar
 global.BarPath1inUse = false;
 // Path two goes to the left side of the bar
-global.BarPath2inUse = true;
+global.BarPath2inUse = false;
 // Path three goes to the right side of the bar
 global.BarPath3inUse = true;
 

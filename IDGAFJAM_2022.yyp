@@ -153,6 +153,7 @@
     {"id":{"name":"TweenIsStopped","path":"scripts/TweenIsStopped/TweenIsStopped.yy",},"order":6,},
     {"id":{"name":"pt_BarPath3","path":"paths/pt_BarPath3/pt_BarPath3.yy",},"order":2,},
     {"id":{"name":"o_view_changer","path":"objects/o_view_changer/o_view_changer.yy",},"order":5,},
+    {"id":{"name":"GiveDrinkScript","path":"scripts/GiveDrinkScript/GiveDrinkScript.yy",},"order":3,},
     {"id":{"name":"TGMS_Update_Log","path":"notes/TGMS_Update_Log/TGMS_Update_Log.yy",},"order":3,},
     {"id":{"name":"DrinkSelector","path":"scripts/DrinkSelector/DrinkSelector.yy",},"order":2,},
     {"id":{"name":"snd_badjob","path":"sounds/snd_badjob/snd_badjob.yy",},"order":9,},
