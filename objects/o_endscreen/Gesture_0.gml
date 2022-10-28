@@ -25,4 +25,5 @@ characterSpawnTimer = 1;
 global.scr_state = screen.bar;
 global.gameover = false;
 ResetMix();
+audio_stop_all();
 room_goto(rm_start);
