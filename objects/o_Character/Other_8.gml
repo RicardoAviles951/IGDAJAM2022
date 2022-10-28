@@ -53,17 +53,20 @@ if(self.x == path_get_point_x(pt_BarPath, 1) && !atBar)
 	global.BarPath1inUse = true;
 	happinessMeterOn = true;
 	atBar = true;
+	audio_play_sound(snd_doorchime,2,false);
 }
 else if(self.x == path_get_point_x(pt_BarPath2, 1) && !atBar)
 {
 	global.BarPath2inUse = true;
 	happinessMeterOn = true;
 	atBar = true;
+	audio_play_sound(snd_doorchime,2,false);
 }
 else if(self.x == path_get_point_x(pt_BarPath3, 1) && !atBar)
 {
 	global.BarPath3inUse = true;
 	happinessMeterOn = true;
 	atBar = true;
+	audio_play_sound(snd_doorchime,2,false);
 }
 
