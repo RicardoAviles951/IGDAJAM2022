@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "OpeningLineChoice",
+  "name": "GiveDrinkScript",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

@@ -2,16 +2,18 @@
 // You can write your code in this editor
 
 // global variables to track if characters have spawnned
-global.rikExists = true;
+global.rikExists = false;
 global.phillipaExists = false;
 global.quincyExists = true;
-global.jowwExists	= true;
-global.brockExists	= true;
-
+global.laifExists = true;
+global.brockExists = true;
 // global variable's to track if paths are in use
-global.BarPath1inUse = true;
-global.BarPath2inUse = true;
-global.BarPath3inUse = false;
+// Path one goes to the center of the bar
+global.BarPath1inUse = false;
+// Path two goes to the left side of the bar
+global.BarPath2inUse = false;
+// Path three goes to the right side of the bar
+global.BarPath3inUse = true;
 
 // global variable tracking customer dissatisfaction
 global.unsatisfiedCustomers = 0;

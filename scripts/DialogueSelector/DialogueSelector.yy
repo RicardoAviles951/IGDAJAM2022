@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Dialogue&LineSelectors",
-    "path": "folders/Scripts/Dialogue&LineSelectors.yy",
+    "name": "Selectors",
+    "path": "folders/Scripts/Selectors.yy",
   },
 }

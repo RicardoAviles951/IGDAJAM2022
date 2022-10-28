@@ -27,7 +27,7 @@ if(!is_array(dialogueText[dialogueSection])){
 	else if(patronName == "Brock"){
 		draw_set_color(c_red);
 	}
-	else if(patronName == "Joww"){
+	else if(patronName == "Laif"){
 		draw_set_color(c_green);
 	}
 	draw_set_halign(fa_center);
@@ -60,7 +60,7 @@ else if(is_array(dialogueText[dialogueSection])){
 		else if(patronName == "Brock"){
 			draw_set_color(c_red);
 		}
-		else if(patronName == "Joww"){
+		else if(patronName == "Laif"){
 			draw_set_color(c_green);
 		}
 		draw_set_halign(fa_center);
@@ -90,7 +90,7 @@ else if(is_array(dialogueText[dialogueSection])){
 		else if(patronName == "Brock"){
 			draw_set_color(c_red);
 		}
-		else if(patronName == "Joww"){
+		else if(patronName == "Laif"){
 			draw_set_color(c_green);
 		}
 		draw_set_halign(fa_center);

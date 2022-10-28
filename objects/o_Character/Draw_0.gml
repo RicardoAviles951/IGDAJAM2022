@@ -20,11 +20,7 @@ switch(character.charName){
 		// draw Brock draw_sprite(s_Rik, 0, x, y);
 	break;
 	
-	case "Fairy":
-		// draw Fairy draw_sprite(s_Rik, 0, x, y);
-	break;
-	
-	case "Joww":
+	case "Laif":
 		// draw Joww draw_sprite(s_Rik, 0, x, y);
 	break;
 }

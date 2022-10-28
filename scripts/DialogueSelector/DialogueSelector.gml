@@ -18,9 +18,9 @@ function DialogueManagerScript(name, happiness, happinessMax, drunkenness, drunk
 	{
 		text = BrockDialogueManager(name, happiness, happinessMax, drunkenness, drunkennessMax, firstArrival, drink);
 	}
-	else if (name = "Joww")
+	else if (name = "Laif")
 	{
-		text = JowwDialogueManager(name, happiness, happinessMax, drunkenness, drunkennessMax, firstArrival, drink);
+		text = LaifDialogueManager(name, happiness, happinessMax, drunkenness, drunkennessMax, firstArrival, drink);
 	}
 	
 	return text;

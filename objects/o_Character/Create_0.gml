@@ -33,8 +33,8 @@ else if (character.charName == "Phillipa") {
 else if (character.charName == "Brock") {
 	global.brockExists = true;
 	}
-else if (character.charName == "Joww") {
-	global.jowwExists = true;
+else if (character.charName == "Laif") {
+	global.laifExists = true;
 	}	
 
 //select character drink

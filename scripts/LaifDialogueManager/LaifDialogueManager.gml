@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function JowwDialogueManager(name, happiness, happinessMax, drunkenness, drunkennessMax, firstArrival, drink){
+function LaifDialogueManager(name, happiness, happinessMax, drunkenness, drunkennessMax, firstArrival, drink){
 	var dialogue = ".";
 	var conversation1 = ".";
 	var conversation2 = ".";
