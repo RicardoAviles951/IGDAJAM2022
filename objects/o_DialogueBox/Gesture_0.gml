@@ -30,4 +30,5 @@ else if (dialogueSection + 1 >= array_length_1d(dialogueText) && self.visible ==
 	dialogueCreator.fallBackFromBar = true;
 	instance_destroy()
 	dialogueCreator.childDialogueBox = noone;
+	global.conversationStarted = false;
 }
