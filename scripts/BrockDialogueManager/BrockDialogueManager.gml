@@ -16,8 +16,8 @@ function BrockDialogueManager(name, happiness, happinessMax, drunkenness, drunke
 		"So.",
 		"Exhausting.",
 		"People talk about us dwarves and our hearty constitutions, but by the gods, after eight hours down there all I want to do is kick back and relax.",
-		" You know, never thought about it till now, but it's weird that I work all day just so you can work all night. Like I want to relax sure, but it hurts that I relax at your expense.",
-		" Maybe we should trade jobs for a day, and see what it's like from the other's perspective haha. How's that sound?",
+		"You know, never thought about it till now, but it's weird that I work all day just so you can work all night. Like I want to relax sure, but it hurts that I relax at your expense.",
+		"Maybe we should trade jobs for a day, and see what it's like from the other's perspective haha. How's that sound?",
 		["Sounds cool.", "Eh, I'm fine."],
 		["Ha, I knew you'd entertain the idea.", "Don't even want to entertain the idea? Wow."],
 		"Well, whatever. Wouldn't happen today anyway. Now, where's my " + drink + ".", "."];
