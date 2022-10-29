@@ -3,7 +3,6 @@ if step == steps.interactive{
 	switch(class.type)
 			{
 				case "spirit":
-				with(inst_pour) visible = false;
 				global.mixstate = mixstates.picking;
 	with(global.ID){
 		step = steps.waiting;
@@ -22,7 +21,7 @@ if step == steps.interactive{
 				break;
 				
 				case "sweet":
-				with(inst_pour) visible = false;
+	
 				global.mixstate = mixstates.picking;
 	with(global.ID){
 		step = steps.waiting;

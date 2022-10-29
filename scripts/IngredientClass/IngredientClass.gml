@@ -12,7 +12,6 @@ function IngredientClass(_type,_name,_icon,_index=0,_drops = o_droplets_banshee)
 			//Behavior for spirits when adding to cup
 			var str = object_get_name(index);
 			var obj = asset_get_index(str);
-			with(inst_pour) visible = true;
 			with(instance_create_layer(o_shaker.x+48,o_shaker.y-112,"Ingredients",obj)){
 				TweenEasyScale(1,1,2,2,0,15,EaseInOutBack);
 				TweenEasyRotate(0,135,0,15,EaseInOutQuad);
@@ -34,7 +33,6 @@ function IngredientClass(_type,_name,_icon,_index=0,_drops = o_droplets_banshee)
 			case "sweet":
 			var str = object_get_name(index);
 			var obj = asset_get_index(str);
-			with(inst_pour) visible = true;
 			with(instance_create_layer(o_shaker.x+48,o_shaker.y-112,"Ingredients",obj)){
 				TweenEasyScale(1,1,3,3,0,15,EaseInOutQuad);
 				TweenEasyRotate(0,135,0,15,EaseInOutQuad);

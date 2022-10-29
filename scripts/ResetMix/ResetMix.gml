@@ -1,5 +1,6 @@
 ///Resets all vital variables and positions to start over with a drink. 
 function ResetMix(){
+	o_gesture_pinch.visible = false;
 	global.ID = noone;
 	global.mixstate = mixstates.picking;
 	with(o_shaker){
@@ -21,6 +22,31 @@ function ResetMix(){
 	with(o_icewell){
 		added = false;
 	}
+	with(o_ing_parent){
+		if step == steps.interactive{
 	
+				instance_destroy();
+			}
+			
+	}
+	with(o_gesture_parent){
+			with(inst_flick_fruit){
+			visible = false;
+			text = "SWIPE"
+		}
+		with(inst_flick_bar){
+			text = "SWIPE"
+		}
+
+
+		with(inst_flick_glass){
+			visible = false;
+			text = "CANCEL"
+		}
+		with(inst_glass_final){
+			visible = false;
+			text = "CONFIRM";
+		}
+			}
 
 }
