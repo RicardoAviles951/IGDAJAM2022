@@ -11,22 +11,22 @@ function LaifDialogueManager(name, happiness, happinessMax, drunkenness, drunken
 	{
 		if ((happiness >= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
 			//dialogue = ["This is a dialogue test. This line is now longer in order to test how the text wraps. I hope it is wrapping nicely. I am now typing an even longer line to see how far the lines will go down. If this goes over then I have a pretty good idea how far they go.", "Now lets see if the dialogue box location switches when I switch stations.", "Hell yeah, it did!", "Now for branching dialogue.", "A 'yes' and 'no' box should appear to the left and right.", ["Yes, this is a long line.", "No, this is a longer line."], ["Option 1 selected.", "Option 2 selected."], "Wow, you selected an option!", "Let's see if you can do that again.", ["I can.", "I cannot."], ["Nice job!", "You gotta believe in yourself."], "You did it!", "The dialogue test is over."];
-			conversation1 = ["This is happy sober dialogue 1", "This character is happy drunk.", "I want a " + drink ".", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation1 = ["This is happy sober dialogue 1", "This character is happy drunk.", "I want a " + drink +".", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
 			dialogue = conversation1;		
 		}
 		// happy and drunk text in text box
 		else if ((happiness >= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-			conversation1 = ["This is happy drunk dialogue 1", "This character is happy drunk.", "I want a " + drink ".", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation1 = ["This is happy drunk dialogue 1", "This character is happy drunk.", "I want a " + drink +".", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
 			dialogue = conversation1;
 		}
 		// angry and sober text in text box
 		else if ((happiness <= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
-			conversation1 = ["This is angry sober dialogue 1", "This character is angry sober.", "I want a " + drink ".", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation1 = ["This is angry sober dialogue 1", "This character is angry sober.", "I want a " + drink+ ".", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
 			dialogue = conversation1	
 		}
 		// angry and drunk text in text box
 		else if ((happiness <= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-			conversation1 = ["This is angry drunk dialogue 1", "This character is angry drunk.", "I want a " + drink ".", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
+			conversation1 = ["This is angry drunk dialogue 1", "This character is angry drunk.", "I want a " + drink +".", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
 			dialogue = conversation1
 		}
 	}
