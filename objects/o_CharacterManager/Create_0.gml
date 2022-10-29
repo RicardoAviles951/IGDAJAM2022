@@ -6,7 +6,7 @@ global.rikExists = true;
 global.phillipaExists = false;
 global.quincyExists = true;
 global.laifExists = true;
-global.brockExists = true;
+global.brockExists = false;
 // global variable's to track if paths are in use
 // Path one goes to the center of the bar
 global.BarPath1inUse = false;
@@ -22,9 +22,9 @@ global.satisfiedCustomers = 0;
 // global variable checking if player has started conversation
 global.conversationStarted = false;
 // tutorial variable
-global.tutorialOver = false;
+global.tutorialOver = true;
 // variables for character spawn timer
-characterSpawnTimer = 1;
+characterSpawnTimer = 0.5;
 
 
 //show_debug_message(global.rikExists);

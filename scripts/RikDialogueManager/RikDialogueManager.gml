@@ -39,10 +39,12 @@ function RikDialogueManager(name, happiness, happinessMax, drunkenness, drunkenn
 		}
 		// angry and drunk text in text box
 		else if ((happiness <= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-			conversation1 = ["Hey! *hic* We gotta talk. And make me a " + drink + " while you're at it","Look...*hic* I hired you 'cause...well cause I needed help, but you don't *hic* seem to be helping all that much.","I've got people in the bar talking bad about you and even some people talking bad about *hic* me. Now, we can't have that...alright?","I need to know that I *hic* can trust you behind that counter. So *hic* can I trust you?",["Definitely!","Maybe?"],["*hic* Now THAT is what I want to hear!","*hic* No no no you need to be more confident!"],"Well, anyway, I need *hic* to try and work. Hand me my " + drink + ".","."];
-			conversation2 = ["."];
-			conversation3 = ["."];
-			randomize();
+
+			conversation1 = ["Hey! *hic* We gotta talk. And make me a " + drink + " while you're at it.","Look...*hic* I hired you 'cause...well cause I needed help, but you don't *hic* seem to be helping all that much.","I've got people in the bar talking bad about you and even some people talking bad about *hic* me. Now, we can't have that...alright?","I need to know that I *hic* can trust you behind that counter. So *hic* can I trust you?",["Definitely!","Maybe?"],["*hic* Now THAT is what I want to hear!","*hic* No no no you need to be more confident!"],"Well, anyway, I need *hic* to try and work. Hand me my " + drink + ".","."];
+			conversation2 = ["*hic* Newbie. Gotta talk. Make me a " + drink + ".","People *hic* are talking. It's not good talk. And it's *hic* not good what I'm seeing.","I hired you *hic* because you looked ready *hic* for the job. Now...I'm not so sure.","People are saying you're not *hic* giving everyone enough attention *hic* and I'm certainly feeling that way.","You think it's a good idea to *hic* ignore people at the bar?",["Absolutely not!","Sometimes."],["You're *hic* right! It’s not! I'm glad to *hic* hear you say that.","I *hic* thought I trained you...better than that!"],"*hic* Okay, okay. It's gonna *hic* be fine. Totally fine. Just make sure to keep focus now, okay?","Anyway, I gotta...*hic* work? Probably? Just hand me my " + drink + ".","."];
+			conversation3 = ["*hic* New...new...you. Gotta talk *hic* to you. Also, make me a " + drink + ".","*hic* Alright, here's the deal. I know I'm you're boss, but tonight *hic* I'm a customer, and you've got to treat...every customer right!","Right now *hic* I'm feeling neglected and, uh, *hic* neglected. That’s not how a customer...should feel.","You gotta treat me right *hic* as a customer! Right?",["Absolutely!","I don't think so."],["Exactly! *hic* I'm just like any other...customer!","Oh! *hic* Bit of a rebel, eh? *hic* I'll keep that in mind for your *hic* review."], "Regardless, it's not just me, but also everyone else! Treat everyone with respect, get their orders out on time, and maybe we get *hic* through the night.","Now then, I'll take my " + drink + " please.","."];
+
+randomize();
 			dialogue = choose(conversation1, conversation2, conversation3);	
 		}
 	}
