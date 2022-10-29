@@ -3,8 +3,6 @@ TweenEasyMove(x,y,startx,starty,0,30,EaseInOutBack);
 shaking = false;
 if array_length(cup) > 0 and global.mixstate == mixstates.shaking{
 show_debug_message("POURING NOW");
-with(inst_glass) visible = true;
-with(inst_drag_shaker) visible = false;
 global.mixstate = mixstates.pouring;
 }
 else{

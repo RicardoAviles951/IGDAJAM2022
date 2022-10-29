@@ -2,7 +2,6 @@ switch(global.mixstate){
 	case mixstates.picking:
 		if step == steps.waiting
 		{
-			with(inst_tap_ing) visible = false;
 				TweenEasyScale(1,1,2,2,0,15,EaseInBack,TWEEN_MODE_BOUNCE);//anim
 				if free
 					{
@@ -23,8 +22,8 @@ switch(global.mixstate){
 		switch(class.type)
 			{
 				case "spirit":
-				with(inst_tap_shaker) visible = true;
-				with(inst_pour) visible = false;
+
+		
 				audio_sound_gain(snd_drops,1,0);
 					//show_message("POUR!");
 					var copy = class.name;
@@ -57,7 +56,6 @@ switch(global.mixstate){
 				break;
 	
 				case "sweet":
-				with(inst_pour) visible = false;
 				audio_sound_gain(snd_drops,1,0);
 					//show_message("Pour BITTERS");
 					var copy = class.name;
