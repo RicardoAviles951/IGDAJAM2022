@@ -3,7 +3,7 @@
 
 // global variables to track if characters have spawnned
 global.rikExists = true;
-global.phillipaExists = false;
+global.phillipaExists = true;
 global.quincyExists = true;
 global.laifExists = true;
 global.brockExists = false;
