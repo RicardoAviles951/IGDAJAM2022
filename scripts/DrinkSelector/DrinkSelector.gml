@@ -5,8 +5,13 @@ function DrinkSelector(name){
 		switch(name)
 		{
 			case "Rik":
+				if(!global.tutorialOver){
+					drink = "Dragon's Treasure";
+				}
+				else {
 				randomize();
 				drink = choose("Dragon's Treasure", "Orc Fashioned", "Drowning Sailor");
+				}
 			break;
 			
 			case "Phillipa":

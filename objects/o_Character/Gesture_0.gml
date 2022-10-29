@@ -13,30 +13,30 @@ if((self.x == path_get_point_x(pt_BarPath, 1) || self.x == path_get_point_x(pt_B
 	childDialogueBox.patronName = character.charName;
 	switch (character.charName){
 		case "Rik":
-			if(character.charDrink == "Dragon's Treasure"){
-				recipeCheckerRef.current_drink = recipeCheckerRef.dragons_treasure;
-			}
-			else if(character.charDrink == "Orc Fashioned"){
-				recipeCheckerRef.current_drink = recipeCheckerRef.orc_fashioned;
-			}
-			else if(character.charDrink == "Dwarven Ale"){
-				recipeCheckerRef.current_drink = recipeCheckerRef.dwarven_ale;
-			}
+				if(character.charDrink == "Dragon's Treasure"){
+					recipeCheckerRef.current_drink = recipeCheckerRef.dragons_treasure;
+				}
+				else if(character.charDrink == "Orc Fashioned"){
+					recipeCheckerRef.current_drink = recipeCheckerRef.orc_fashioned;
+				}
+				else if(character.charDrink == "Drowning Sailor"){
+					recipeCheckerRef.current_drink = recipeCheckerRef.drowning_sailor;
+				}
 		break;
 		case "Quincy":
-			if(character.charDrink == "Dragon's Treasure"){
-				recipeCheckerRef.current_drink = recipeCheckerRef.dragons_treasure;
+			if(character.charDrink == "Three Dwarves"){
+				recipeCheckerRef.current_drink = recipeCheckerRef.three_dwarves;
 			}
 			else if(character.charDrink == "Orc Fashioned"){
 				recipeCheckerRef.current_drink = recipeCheckerRef.orc_fashioned;
 			}
-			else if(character.charDrink == "Dwarven Ale"){
-				recipeCheckerRef.current_drink = recipeCheckerRef.dwarven_ale;
+			else if(character.charDrink == "Drowning Sailor"){
+				recipeCheckerRef.current_drink = recipeCheckerRef.drowning_sailor;
 			}
 		break;
 		case "Phillipa":
-			if(character.charDrink == "Dragon's Treasure"){
-				recipeCheckerRef.current_drink = recipeCheckerRef.dragons_treasure;
+			if(character.charDrink == "Goblet of Fire"){
+				recipeCheckerRef.current_drink = recipeCheckerRef.goblet_fire;
 			}
 			else if(character.charDrink == "Orc Fashioned"){
 				recipeCheckerRef.current_drink = recipeCheckerRef.orc_fashioned;
