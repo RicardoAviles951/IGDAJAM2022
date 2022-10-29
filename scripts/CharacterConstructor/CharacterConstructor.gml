@@ -26,7 +26,7 @@ function Character() constructor{
 		case "Rik":
 			charHappiness = 90;
 			charHappinessMax = charHappiness
-			charDrunkenness = 8;
+			charDrunkenness = 1;
 			charDrunkennessMax = charDrunkenness;
 		break;
 		

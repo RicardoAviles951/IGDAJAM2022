@@ -15,6 +15,8 @@ drunkennessMeterOn = false;
 fallBackFromBar = false;
 // bool if character's happiness meter is at or below 0
 patronUnhappy = false;
+// bool if character's has been served enough drinks
+patronHappy = false;
 // bool to check if character is at bar
 atBar = false;
 // recipe checker reference

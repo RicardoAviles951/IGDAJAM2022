@@ -24,11 +24,6 @@ if (is_array(dialogueText[dialogueSection]) && self.visible == true){
 }
 else if (dialogueSection + 1 >= array_length_1d(dialogueText) && self.visible == true)
 {
-	//dialogueCreator.character.charHappiness = dialogueCreator.character.charHappiness + 20;
-	//dialogueCreator.character.charDrunkenness = dialogueCreator.character.charDrunkenness -1;
-	dialogueCreator.happinessMeterOn = false;
-	dialogueCreator.fallBackFromBar = true;
 	instance_destroy()
 	dialogueCreator.childDialogueBox = noone;
-	global.conversationStarted = false;
 }

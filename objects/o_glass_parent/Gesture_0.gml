@@ -50,6 +50,18 @@ switch(global.mixstate){
 				x = room_width/2;
 				y = 264;
 				global.mixstate = mixstates.give;
+				if(instance_exists(o_DialogueBox)){
+					o_DialogueBox.x = 144;
+					o_DialogueBox.y = 280;
+				}
+				if(instance_exists(o_ChoiceBox)){
+					var firstChoiceBox = instance_find(o_ChoiceBox, 0)
+					var secondChoiceBox = instance_find(o_ChoiceBox, 1)
+					firstChoiceBox.x = 80
+					firstChoiceBox.y = 284
+					secondChoiceBox.x = 432
+					secondChoiceBox.y = 284
+				}
 			}
 			var t = time_source_create(time_source_game,1,time_source_units_seconds,gotobar);
 			time_source_start(t);

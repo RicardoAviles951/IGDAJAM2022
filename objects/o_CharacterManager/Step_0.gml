@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(global.unsatisfiedCustomers == 1){
+if(global.unsatisfiedCustomers == 2){
 	game_end();
 }
-if(global.satisfiedCustomers == 1){
+if(global.satisfiedCustomers == 3){
 	game_end();
 }
 if(global.rikExists == false || global.phillipaExists == false || global.quincyExists == false || global.laifExists == false || global.brockExists == false){

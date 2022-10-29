@@ -6,17 +6,17 @@ function DrinkSelector(name){
 		{
 			case "Rik":
 				randomize();
-				drink = choose("Dragon's Treasure", "Orc Fashioned");
+				drink = choose("Dragon's Treasure", "Orc Fashioned", "Drowning Sailor");
 			break;
 			
 			case "Phillipa":
 				randomize();
-				drink = choose("Orc Fashioned", "Goblet of Fire");
+				drink = choose("Orc Fashioned", "Goblet of Fire", "Drowning Sailor");
 			break;
 			
 			case "Quincy":
 				randomize();
-				drink = choose("Three Dwarves", "Drowned Sailor");
+				drink = choose("Three Dwarves", "Drowning Sailor", "Orc Fashioned");
 			break;
 			case "Brock":
 				randomize();
@@ -24,7 +24,7 @@ function DrinkSelector(name){
 			break;
 			case "Laif":
 				randomize();
-				drink = choose("Dragon's Treasure", "Orc Fashioned");
+				drink = choose("Dragon's Treasure", "Goblet of Fire", "Orc Fashioned");
 			break;
 		}
 		return drink;

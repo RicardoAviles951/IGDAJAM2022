@@ -21,7 +21,8 @@ global.unsatisfiedCustomers = 0;
 global.satisfiedCustomers = 0;
 // global variable checking if player has started conversation
 global.conversationStarted = false;
-
+// tutorial variable
+global.tutorialOver = false;
 // variables for character spawn timer
 characterSpawnTimer = 1;
 

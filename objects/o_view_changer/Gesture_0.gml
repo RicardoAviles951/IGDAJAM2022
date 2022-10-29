@@ -21,7 +21,7 @@
 		case screen.mix:
 		audio_play_sound(snd_swoosh,3,false);
 			global.scr_state = screen.bar;
-						if(instance_exists(o_DialogueBox)){
+			if(instance_exists(o_DialogueBox)){
 				o_DialogueBox.x = 144;
 				o_DialogueBox.y = 280;
 			}
