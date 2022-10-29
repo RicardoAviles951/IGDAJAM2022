@@ -1,3 +1,4 @@
+with(inst_flick_bar) visible = false;
 pos+=1;								//Increments position in the list array by 1;
 if pos > (full_length-1) pos = 0;   //if position overshoots the array length it resets to 0
 trash = array;					    //Saves last known array in trash variable to make invisible.

@@ -1,4 +1,6 @@
 if global.mixstate != mixstates.finished{
+	with(inst_flick_glass) visible = false;
+	with(inst_glass_final) visible = false;
 	if moved 
 	{
 		if isFree == false
