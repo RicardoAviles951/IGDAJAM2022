@@ -5,7 +5,7 @@ function LaifDialogueManager(name, happiness, happinessMax, drunkenness, drunken
 	var conversation1 = ".";
 	// will require dead line at the end of each conversation
 	if(!firstArrival){
-		dialogue = ["I have arrived at the bar", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded"];
+		dialogue = ["o	Hey there, new kid. I’ll take a (drink). Name’s Laif. Maybe you’ve heard of me? Handsomest fairy in town, card shark extraordinaire, and the best damn co- actually, hehe, never mind.", "o	Kinda crazy that Rik actually hired someone else. That old bozo’s been running this place solo for awhile now. But now that you’re here, he gets to take a load off and I get someone new to have fun with.","o	Now kid, you may have noticed that people around here are, uh, how would I put it? Oh yeah! Irritating. They’re all full of themselves. Quincy and his stories, Phillipa and her nobility, Brock and his work. All of them only think about themselves.","",""];
 	}
 	else if(firstArrival)
 	{
