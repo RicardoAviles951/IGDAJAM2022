@@ -16,7 +16,7 @@ function OpeningLineChoice(name, happiness, happinessMax, drunkenness, drunkenne
 				}
 			// happy and drunk text in text box
 				else if ((happiness >= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-					text = "You're…*hic*…doing great! But…I gotta keep yah *hic* on yah toes!";
+					text = "You're...*hic*...doing great! But...I gotta keep yah *hic* on yah toes!";
 				}
 			// angry and sober text in text box
 				else if ((happiness <= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
@@ -24,7 +24,7 @@ function OpeningLineChoice(name, happiness, happinessMax, drunkenness, drunkenne
 				}
 			// angry and drunk text in text box
 				else if ((happiness <= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-					text = "…*hic*…Hey! Customer're saying *hic* you ain't great. Make me something…*hic*";
+					text = "...*hic*...Hey! Customer're saying *hic* you ain't great. Make me something...*hic*";
 				}
 			}
 		break;
@@ -40,7 +40,7 @@ function OpeningLineChoice(name, happiness, happinessMax, drunkenness, drunkenne
 				}
 			// happy and drunk text in text box
 				else if ((happiness >= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-					text = "You are…*zzzz*….a great job. May I…*zzzzz*…. another drink?";
+					text = "You are...*zzzz*....a great job. May I...*zzzzz*.... another drink?";
 				}
 			// angry and sober text in text box
 				else if ((happiness <= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
@@ -48,7 +48,7 @@ function OpeningLineChoice(name, happiness, happinessMax, drunkenness, drunkenne
 				}
 			// angry and drunk text in text box
 				else if ((happiness <= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-					text = "I believe….*zzzzzz*…. are finding you lacking. You need to…*zzzz*… step up to the challenge.";
+					text = "I believe...*zzzzzz*... are finding you lacking. You need to...*zzzz*... step up to the challenge.";
 				}
 			}
 		break;
@@ -103,24 +103,24 @@ function OpeningLineChoice(name, happiness, happinessMax, drunkenness, drunkenne
 		
 		case "Laif":
 					if(!firstArrival){
-				text = "Haha! Someone new! Wonderful. My name is Laif, and I'd love a drink!";
+				text = "Well look at this. Somebody new! Name's Laif. How's life?";
 			}
 			else if (firstArrival){
 			// happy and sober text in text box
 				if ((happiness >= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
-					text = "Seem’s like you’re doing a good job! Now, what will I get?";
+					text = "New kid! Great to see yah! I'm looking to get a drink.";
 				}
 			// happy and drunk text in text box
 				else if ((happiness >= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-					text = "Seem’s like you’re doing a good job! Now, what will I get?";
+					text = "Well if it ain't the new kid! Rik's got a talent on his hands with you! Now, what do I want to drink.";
 				}
 			// angry and sober text in text box
 				else if ((happiness <= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
-					text = "Hey! I’m hearing bad things from customers. Time for a test!";
+					text = "New kid, new kid, new kid. Gotta shape up. Now, what do I want to drink?";
 				}
 			// angry and drunk text in text box
 				else if ((happiness <= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-					text = "…*hic*…Hey! Customer’re saying *hic* you ain’t great. Make me something…*hic*";
+					text = "New! Kid! You gotta step it up! Noooow whadda I want to drink?";
 				}
 			}
 		break;
