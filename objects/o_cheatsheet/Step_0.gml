@@ -13,6 +13,6 @@ if keyboard_check_pressed(vk_numpad2) y_adj +=1;
 //show_debug_message("X adj " + string(x_adj));
 //show_debug_message("Y adj " + string(y_adj));
 
-show_debug_message(mouse_x);
+//show_debug_message(mouse_x);
 
-show_debug_message(mouse_y);
+//show_debug_message(mouse_y);

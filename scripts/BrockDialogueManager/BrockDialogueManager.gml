@@ -25,7 +25,7 @@ function BrockDialogueManager(name, happiness, happinessMax, drunkenness, drunke
 	}
 	else if(firstArrival)
 	{
-		if ((happiness >= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
+		if ((happiness >= (happinessMax / 2)) && (drunkennessMax >= (drunkenness / 2))){
 			
 			conversation1 = ["Ah, my fellow worker. Could I get a " + drink + "please?",
 							"You know, Rik's been running this place solo for so long, it's weird to be served by someone who isn't him.",
@@ -40,7 +40,7 @@ function BrockDialogueManager(name, happiness, happinessMax, drunkenness, drunke
 			dialogue = choose(conversation1);		
 		}
 		// happy and drunk text in text box
-		else if ((happiness >= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
+		else if ((happiness >= (happinessMax / 2)) && (drunkennessMax <= (drunkenness / 2))){
 			conversation1 = ["Ah, new face! New blood! Comrade, dare I say. Could I get a " + drink + "?",
 							"This is it! This is what I'm talking about! Good drinks, good atmosphere, good friends! And you! You're a pleasant surprise!",
 							"Look at us, just two workers chatting the night away. It's so nice to have someone else here who understands the plight of the people here. When Rik was behind the counter, he would just tune me out as I talked, but you, you care! It's a wonderful change.",
@@ -52,7 +52,7 @@ function BrockDialogueManager(name, happiness, happinessMax, drunkenness, drunke
 			dialogue = choose(conversation1);		
 		}
 		// angry and sober text in text box
-		else if ((happiness <= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
+		else if ((happiness <= (happinessMax / 2)) && (drunkennessMax >= (drunkenness / 2))){
 			conversation1 = ["Hey. I'll take a "+ drink + ".",
 							"This place...ugh, I'm just not feeling it tonight.",
 							"Like, I'm not expecting a great time every time, but I thought tonight would be different, especially with you here.",
@@ -66,7 +66,7 @@ function BrockDialogueManager(name, happiness, happinessMax, drunkenness, drunke
 			dialogue = choose(conversation1);	
 		}
 		// angry and drunk text in text box
-		else if ((happiness <= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
+		else if ((happiness <= (happinessMax / 2)) && (drunkennessMax <= (drunkenness / 2))){
 			conversation1 = ["Oi! Get me a " + drink + "!", ".",
 							"Agh! The atmosphere tonight is off. Off! When I work a hard shift in the mine, I want to come here and relax, but I can't relax if THIS is what the place is like.",
 							"And I don't mean to point fingers, but I gotta say, you're not doing much to help the situation. We're fellow workers, right? So help a fellow worker out.",

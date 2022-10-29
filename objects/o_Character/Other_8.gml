@@ -8,16 +8,16 @@ if(childTextBox == noone && !atBar)
 		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
 	}
 	else if(character.charName == "Quincy"){
-		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
+		childTextBox = instance_create_layer(self.x - 7, self.y - 70, "DialogueLayer", o_TextBox, character);
 	}
 	else if(character.charName == "Phillipa"){
 		childTextBox = instance_create_layer(self.x - 10, self.y - 55, "DialogueLayer", o_TextBox, character);
 	}
 	else if(character.charName == "Brock"){
-		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
+		childTextBox = instance_create_layer(self.x - 8, self.y - 20, "DialogueLayer", o_TextBox, character);
 	}
 	else if(character.charName == "Laif"){
-		childTextBox = instance_create_layer(self.x + 5, self.y - 70, "DialogueLayer", o_TextBox, character);
+		childTextBox = instance_create_layer(self.x - 40, self.y + 25, "DialogueLayer", o_TextBox, character);
 	}
 	childTextBox.openingText = OpeningLineChoice(character.charName, character.charHappiness, character.charHappinessMax, character.charDrunkenness, character.charDrunkennessMax, character.firstArrival);
 	childTextBox.patronName = character.charName;

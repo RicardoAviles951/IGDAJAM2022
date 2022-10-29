@@ -54,6 +54,7 @@ function GiveDrinkScript(){
 			}
 			audio_play_sound(snd_badjob,1,false);//Plays bad sound
 		}
+		show_debug_message(character.charDrunkennessMax);
 	}
 
 	// if character is not ordering, do nothing

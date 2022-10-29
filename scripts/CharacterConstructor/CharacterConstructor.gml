@@ -19,43 +19,49 @@ function Character() constructor{
 	charHappinessMax = charHappiness
 	charDrunkenness = 5;
 	charDrunkennessMax = charDrunkenness;
+	charDrunkennessTime = charDrunkenness;
 	charDrink = "";
 	firstArrival = false;
 	charOrdering = false;
 	switch(charName){
 		case "Rik":
-			charHappiness = 90;
+			charHappiness = 155;
 			charHappinessMax = charHappiness
 			charDrunkenness = 8;
 			charDrunkennessMax = charDrunkenness;
+			charDrunkennessTime = charDrunkenness;
 		break;
 		
 		case "Phillipa":
-			charHappiness = 60;
+			charHappiness = 120;
 			charHappinessMax = charHappiness
-			charDrunkenness = 2;
+			charDrunkenness = 3;
 			charDrunkennessMax = charDrunkenness;
+			charDrunkennessTime = charDrunkenness;
 		break;
 
 		case "Quincy":
-			charHappiness = 120;
+			charHappiness = 180;
 			charHappinessMax = charHappiness
 			charDrunkenness = 8;
 			charDrunkennessMax = charDrunkenness;
+			charDrunkennessTime = charDrunkenness;
 		break;
 	
 		case "Brock":
-			charHappiness = 100;
-			charHappinessMax = charHappiness
-			charDrunkenness = 10;
-			charDrunkennessMax = charDrunkenness;
-		break;
-	
-		case "Laif":
-			charHappiness = 80;
+			charHappiness = 165;
 			charHappinessMax = charHappiness
 			charDrunkenness = 12;
 			charDrunkennessMax = charDrunkenness;
+			charDrunkennessTime = charDrunkenness;
+		break;
+	
+		case "Laif":
+			charHappiness = 155;
+			charHappinessMax = charHappiness
+			charDrunkenness = 12;
+			charDrunkennessMax = charDrunkenness;
+			charDrunkennessTime = charDrunkenness;
 		break;
 	}
 	

@@ -52,7 +52,7 @@ if(drunkennessMeterOn){
 	}
 	else if (character.charDrunkenness <= 0){
 		event_user(1);
-		character.charDrunkenness = character.charDrunkennessMax;
+		character.charDrunkenness = character.charDrunkennessTime;
 		drunkennessMeterOn = false;
 	}
 }
