@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // global variables to track if characters have spawnned
-global.rikExists = false;
+global.rikExists = true;
 global.phillipaExists = false;
 global.quincyExists = true;
 global.laifExists = true;
