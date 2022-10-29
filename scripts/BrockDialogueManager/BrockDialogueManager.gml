@@ -7,41 +7,76 @@ function BrockDialogueManager(name, happiness, happinessMax, drunkenness, drunke
 	var conversation3 = ".";
 	// will require dead line at the end of each conversation
 	if(!firstArrival){
-		dialogue = ["I have arrived at the bar", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded"];
+		dialogue = ["I think I'll have a " + drink + ".",
+		"So, Rik hired a new hand? That's good."+
+		" Glad to see another person doing honest work in this town."+
+		" I said it already, but the name's Brock. I work in the mines on the far side of town.",
+		"It's honest work, to be sure, but...",
+		"It's.",
+		"So.",
+		"Exhausting.",
+		"People talk about us dwarves and our hearty constitutions, but by the gods, after eight hours down there all I want to do is kick back and relax.",
+		" You know, never thought about it till now, but it's weird that I work all day just so you can work all night. Like I want to relax sure, but it hurts that I relax at your expense.",
+		" Maybe we should trade jobs for a day, and see what it's like from the other's perspective haha. How's that sound?",
+		["Sounds cool.", "Eh, I'm fine."],
+		["Ha, I knew you'd entertain the idea.", "Don't even want to entertain the idea? Wow."],
+		"Well, whatever. Wouldn't happen today anyway. Now, where's my " + drink + ".", "."];
+
 	}
 	else if(firstArrival)
 	{
 		if ((happiness >= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
-			//dialogue = ["This is a dialogue test. This line is now longer in order to test how the text wraps. I hope it is wrapping nicely. I am now typing an even longer line to see how far the lines will go down. If this goes over then I have a pretty good idea how far they go.", "Now lets see if the dialogue box location switches when I switch stations.", "Hell yeah, it did!", "Now for branching dialogue.", "A 'yes' and 'no' box should appear to the left and right.", ["Yes, this is a long line.", "No, this is a longer line."], ["Option 1 selected.", "Option 2 selected."], "Wow, you selected an option!", "Let's see if you can do that again.", ["I can.", "I cannot."], ["Nice job!", "You gotta believe in yourself."], "You did it!", "The dialogue test is over."];
-			conversation1 = ["Well hey there! Hope the place is treating you well. Sometimes I like to partake of my own stock, haha. I'll have a (drink), please!", "I'm glad you decided to come and work here. I've been short staffed for awhile now and having you here is gonna be a huge help to me.", "What made you want to become a bartender, anyway?", ["I love the work.", "I needed money."], ["Really?! That's great to hear! Now I'm even more happy I hired you.","Ah, well, makes sense. Just make sure you do a good job, okay?"], "Regardless, whatever you do here, just make sure to keep the customers happy, okay? That's the most important thing.", "Ah, people are starting to stare. Maybe it's not a good look for the boss to be drinking on the job. Pass me my drink and I'll be on my way.", "."];
-			conversation2 = ["Hey hey, I'm back! Gonna partake of my own stock a bit. Could I get a (drink)?","If I haven't said it before, I'm so glad that you're working here. The extra pair of hands is great.","Just maybe, uh, don't do what I'm doing and drink on the job haha. You wouldn't do that, right?", ["Not a chance.","I would if I could."], ["Great! Glad I can trust you.","Well then, looks like I'll have to keep an eye on you."], "o	You know, running a bar is a crazy experience, let me tell yah. Meeting new people, making new drinks, having a good time all around. It's just a fun experience!", "Are you have a good time here?", ["Yes!","No."], ["I knew you would like it!", "Really? Seems like you picked the wrong job."], "Oh, looks like some people are looking over here. Pass me my drink so I can leave.", "."];
-			conversation3 = ["Look at this! You're a natural! Glad you're getting along so well. Now, how about you make me a (drink).","You're a real life saver, you know that? You taking this job really saved my bacon. Without you, this place may have gone under!","But now we're gonna have more people coming in then ever before. I just know it.","You think you’re ready for that when it happens?", ["I definitely am!","Uh, I'm not sure."],["I knew it! I knew you'd be ready! When that day comes, your bartending skills will shine.", "Oh, really? Well, looks like I'll have to do more work to train you later then."], "But yes, more people means more money, and more money means hiring more bartenders. Soon I won't even have to lift a finger!","Just you up front commanding an army of bartenders and me in the back planning out franchises!","o	Well, enough dreaming. I gotta get back to work. Though I do need my drink, so pass it down my way.","."];
-			randomize();
-			dialogue = choose(conversation1, conversation2, conversation3);		
+			
+			conversation1 = ["Ah, my fellow worker. Could I get a " + drink + "please?",
+							"You know, Rik's been running this place solo for so long, it's weird to be served by someone who isn't him.",
+							"Now he's the boss, so he gets to go around, telling you what to do, yelling orders and everything. Just like Foreman Grool down in the mines. Ugh, what a terrible boss.",
+							"Hey, be honest with me, is Rik a good boss?",
+							["No", "Yes"],
+							["Ah, I knew it! No one's boss is good. They're all good for nothing in my opinion.",
+							"Really? To be honest, I don't believe you. Huh, maybe you're... never mind."],
+							"Anyway, I think that we should get rid of bosses altogether. I mean it. No bosses, no lords or ladies. I mean, what are we doing still having lords and ladies? What has Lord Kalevi or Lady Phillipa done for the little guy?",
+							"But hey, not something I can dwell on right now. Gotta relax. Anyway, where's my " + drink + "?", "."];
+		
+			dialogue = choose(conversation1);		
 		}
 		// happy and drunk text in text box
 		else if ((happiness >= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-			conversation1 = ["This is happy drunk dialogue 1 and I want a " + drink + ".", "This character is happy drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation2 = ["This is happy drunk dialogue 2 and I want a " + drink + ".", "This character is happy drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation3 = ["This is happy drunk dialogue 3 and I want a " + drink + ".", "This character is happy drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			randomize();
-			dialogue = choose(conversation1, conversation2, conversation3);		
+			conversation1 = ["Ah, new face! New blood! Comrade, dare I say. Could I get a " + drink + "?",
+							"This is it! This is what I'm talking about! Good drinks, good atmosphere, good friends! And you! You're a pleasant surprise!",
+							"Look at us, just two workers chatting the night away. It's so nice to have someone else here who understands the plight of the people here. When Rik was behind the counter, he would just tune me out as I talked, but you, you care! It's a wonderful change.",
+							"By the way, don't think I've asked you, why'd you start working here in the first place? I mean, joining a place that has no other workers? Kind of bold.",
+							["Needed money", "Want my own bar"],
+							["Ah, of course! See, that's what this town does. Pushes you into servitude under someone else.","Really? You want to be a boss someday? Ugh, can't imagine it."],
+							"Anyway, if you could pass me my " + drink + "that'd be great!", "."];
+
+			dialogue = choose(conversation1);		
 		}
 		// angry and sober text in text box
 		else if ((happiness <= (happinessMax / 2)) && (drunkenness >= (drunkennessMax / 2))){
-			conversation1 = ["This is angry sober dialogue 1 and I want a " + drink + ".", "This character is angry sober.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation2 = ["This is angry sober dialogue 2 and I want a " + drink + ".", "This character is angry sober.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation3 = ["This is angry sober dialogue 3 and I want a " + drink + ".", "This character is angry sober.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			randomize();
-			dialogue = choose(conversation1, conversation2, conversation3);	
+			conversation1 = ["Hey. I'll take a "+ drink + ".",
+							"This place...ugh, I'm just not feeling it tonight.",
+							"Like, I'm not expecting a great time every time, but I thought tonight would be different, especially with you here.",
+							"Look, I just want to say this, worker to worker. You gotta step it up a bit. Not for your boss or anything, but for the people here and, most importantly, yourself.",
+							"Rik might be pleasant, but I'm sure he'd fire you in a second if he saw how you were treating people, especially me. I'm a regular. I don't have pull, but Rik does notice when I'm not happy, and that shouldn't fall on you.",
+							"You get what I'm saying, right?",
+							["Yes", "No"],
+							["Knew you would. You're smart.", "Thought I couldn't spell it out any clearer. Oh well."],
+							"Anyway, pass me my " + drink + ".", "."]; 
+
+			dialogue = choose(conversation1);	
 		}
 		// angry and drunk text in text box
 		else if ((happiness <= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-			conversation1 = ["This is angry drunk dialogue 1 and I want a " + drink + ".", "This character is angry drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation2 = ["This is angry drunk dialogue 2 and I want a " + drink + ".", "This character is angry drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			conversation3 = ["This is angry drunk dialogue 3 and I want a " + drink + ".", "This character is angry drunk.", "Here is a choice", ["A","B"], ["You chose A.","You chose B."], "The Dialogue has concluded", "."];
-			randomize();
-			dialogue = choose(conversation1, conversation2, conversation3);	
+			conversation1 = ["Oi! Get me a " + drink + "!", ".",
+							"Agh! The atmosphere tonight is off. Off! When I work a hard shift in the mine, I want to come here and relax, but I can't relax if THIS is what the place is like.",
+							"And I don't mean to point fingers, but I gotta say, you're not doing much to help the situation. We're fellow workers, right? So help a fellow worker out.",
+							"Here's a thought, an idea, a plan. How about you, you make this next drink free? I think that would probably fix a lot of the problems I'm having right now.",
+							"So how 'bout it? Free drink for your fellow worker?",
+							["Sure!", "Can't do it."],
+							["Ah, that's the spirit! That's what I like to see! I won't forget this, I promise!", "Still beholden to the bosses, eh! The profits! Agh, I should've known!"],
+							"Now hand me my " + drink + "!", "."]; 
+	
+			dialogue = choose(conversation1);	
 		}
 	}
 	return dialogue;
