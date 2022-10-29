@@ -2,11 +2,11 @@
 // You can write your code in this editor
 
 // global variables to track if characters have spawnned
-global.rikExists = false;
-global.phillipaExists = false;
+global.rikExists = true;
+global.phillipaExists = true;
 global.quincyExists = true;
 global.laifExists = true;
-global.brockExists = true;
+global.brockExists = false;
 // global variable's to track if paths are in use
 // Path one goes to the center of the bar
 global.BarPath1inUse = false;
@@ -24,7 +24,7 @@ global.conversationStarted = false;
 // tutorial variable
 global.tutorialOver = false;
 // variables for character spawn timer
-characterSpawnTimer = 1;
+characterSpawnTimer = 0.5;
 
 
 //show_debug_message(global.rikExists);

@@ -39,7 +39,7 @@ function RikDialogueManager(name, happiness, happinessMax, drunkenness, drunkenn
 		}
 		// angry and drunk text in text box
 		else if ((happiness <= (happinessMax / 2)) && (drunkenness <= (drunkennessMax / 2))){
-			conversation1 = ["Hey! *hic* We gotta talk. And make me a " + drink " while you're at it","Look...*hic* I hired you 'cause...well cause I needed help, but you don't *hic* seem to be helping all that much.","I've got people in the bar talking bad about you and even some people talking bad about *hic* me. Now, we can't have that...alright?","I need to know that I *hic* can trust you behind that counter. So *hic* can I trust you?",["Definitely!","Maybe?"],["*hic* Now THAT is what I want to hear!","*hic* No no no you need to be more confident!"],"Well, anyway, I need *hic* to try and work. Hand me my " + drink + ".","."];
+			conversation1 = ["Hey! *hic* We gotta talk. And make me a " + drink + " while you're at it","Look...*hic* I hired you 'cause...well cause I needed help, but you don't *hic* seem to be helping all that much.","I've got people in the bar talking bad about you and even some people talking bad about *hic* me. Now, we can't have that...alright?","I need to know that I *hic* can trust you behind that counter. So *hic* can I trust you?",["Definitely!","Maybe?"],["*hic* Now THAT is what I want to hear!","*hic* No no no you need to be more confident!"],"Well, anyway, I need *hic* to try and work. Hand me my " + drink + ".","."];
 			conversation2 = ["."];
 			conversation3 = ["."];
 			randomize();
