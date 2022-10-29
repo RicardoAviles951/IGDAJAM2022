@@ -10,6 +10,7 @@ if open{
 	var c = c_black;
 	draw_set_font(f_cheats); //Set font
 	draw_set_halign(fa_center);
+	draw_sprite_ext(s_gesture_tap,0,x+96,y+32,.5,.5,45,c_white,1)
 	for(var i = 0; i < len; i++){//Loop through mlist and stores array vars
 		var array = mlist[i];
 		draw_text_ext_transformed_color(x,starty-48+(52*i),array[@ 0],64,640/scale,scale,scale,0,c,c,c,c,1);
