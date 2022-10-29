@@ -17,7 +17,6 @@ switch(global.mixstate){
 	
 	case mixstates.pouring:
 	with(inst_flick_glass) visible = true;
-	with(inst_glass_final) visible = true;
 	if moved == false
 		{
 			if isFree
@@ -34,7 +33,6 @@ switch(global.mixstate){
 		else
 		{
 			with(inst_flick_glass) visible = false;
-			with(inst_glass_final) visible = false;
 			//Execute any animations
 			TweenEasyScale(1,1,1.5,1.5,0,15,EaseInOutBack);
 			//Move Shaker off screen
