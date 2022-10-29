@@ -3,7 +3,7 @@
 
 // global variables to track if characters have spawnned
 global.rikExists = true;
-global.phillipaExists = true;
+global.phillipaExists = false;
 global.quincyExists = true;
 global.laifExists = true;
 global.brockExists = false;
@@ -22,7 +22,7 @@ global.satisfiedCustomers = 0;
 // global variable checking if player has started conversation
 global.conversationStarted = false;
 // tutorial variable
-global.tutorialOver = false;
+global.tutorialOver = true;
 // variables for character spawn timer
 characterSpawnTimer = 0.5;
 
