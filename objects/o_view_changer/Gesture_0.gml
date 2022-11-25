@@ -4,15 +4,15 @@
 		audio_play_sound(snd_swoosh,3,false);
 			global.scr_state = screen.mix;
 			if(instance_exists(o_DialogueBox)){
-				o_DialogueBox.x = 48;
+				o_DialogueBox.x = 12;
 				o_DialogueBox.y = 380;
 			}
 			if(instance_exists(o_ChoiceBox)){
 				var firstChoiceBox = instance_find(o_ChoiceBox, 0)
 				var secondChoiceBox = instance_find(o_ChoiceBox, 1)
-				firstChoiceBox.x = 48
+				firstChoiceBox.x = 12
 				firstChoiceBox.y = 392
-				secondChoiceBox.x = 288
+				secondChoiceBox.x = 252
 				secondChoiceBox.y = 392
 			}
 
